@@ -2,7 +2,8 @@
 import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-import TestimonialCard from '../components/TestimonialCard';
+import TestimonialCard from '../components/Home/TestimonialCard';
+import PropertyShowcase from '../components/Home/PropertyShowcase'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import AOS from 'aos';
@@ -24,7 +25,7 @@ const Home = () => {
     return (
         <div className="w-full">
             {/* Hero Slider Section */}
-            <div className="relative w-full h-[60vh] md:h-screen">
+            <div className="h-[calc(100vh-64px)]">
                 <Swiper
                     modules={[Autoplay, Pagination]}
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -38,7 +39,7 @@ const Home = () => {
                                 src={img.src || '/fallback.jpg'}
                                 alt={img.alt || 'ApnaGoa Stay'}
                                 className="w-full h-full object-cover"
-
+                                loading='lazy'
                             />
 
                             {/* Optional Overlay Title */}
@@ -58,6 +59,10 @@ const Home = () => {
                     Listen to what our guests have to say
                 </h2>
                 <TestimonialCard />
+            </div>
+
+            <div>
+                <PropertyShowcase></PropertyShowcase>
             </div>
         </div>
     );

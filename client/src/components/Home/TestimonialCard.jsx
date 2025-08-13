@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { FaStar, FaQuoteRight } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-import reviews from '../Data/Reviews.json';
+import reviews from '../../Data/Reviews.json';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import AOS from 'aos';

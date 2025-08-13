@@ -1,7 +1,7 @@
 // src/pages/Service.jsx
 import React from 'react';
 import { FaUmbrellaBeach, FaShuttleVan, FaWifi, FaUtensils, FaRegSnowflake } from 'react-icons/fa';
-import SwiperSlider from '../components/SwiperSlider';
+import SwiperSlider from '../components/explore/SwiperSlider';
 
 import Complimentary from '../Data/Service/Complimentary.json';
 import Premium from '../Data/Service/Premium.json';
@@ -12,11 +12,11 @@ const Service = () => {
 
             <div className="min-h-screen px-6 py-12 bg-gradient-to-br from-yellow-50 via-white to-rose-100 text-gray-800">
                 <h1 className="text-4xl font-bold text-center mb-12">What we have to offer</h1>
-                <div>
+                <div data-aos="fade-up">
                     <h4 className='text-2xl font-semibold'>Complimentary Amenities</h4>
                     <div className='mt-5'> <SwiperSlider slidesData={Complimentary} type='services' ></SwiperSlider></div>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <h4 className='text-2xl font-semibold'>Premium Services</h4>
                     <div className='mt-5'> <SwiperSlider slidesData={Premium} type='services' ></SwiperSlider></div>
                 </div>

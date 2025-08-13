@@ -2,37 +2,48 @@
     {
         "id": 1,
         "title": "Best Time to Visit",
-        "description": "November to February offers the most pleasant weather with temperatures between 20-32°C. The monsoon season (June to September) brings lush green landscapes but some activities may be limited.October and March are transition months with fewer tourists and decent weather, making them ideal for budget travelers.",
+        "description1": "November to February offers the most pleasant weather with temperatures between 20-32°C. The monsoon season (June to September) brings lush green landscapes but some activities may be limited.",
+        "dscription2": "October and March are transition months with fewer tourists and decent weather, making them ideal for budget travelers.",
         "note": "Avoid peak holiday seasons (Christmas, New Year) for better rates and fewer crowds."
     },
     {
         "id": 2,
         "title": "Accommodation",
-        "description": "South Goa offers a range of accommodations from luxury resorts to budget guesthouses and beach huts. Book in advance during peak season (December-January).Palolem, Agonda, and Benaulim are ideal for budget travelers while Cavelossim and Mobor cater to luxury seekers.Consider homestays like ApnaGoa Homestays for an authentic experience with local hosts who can provide personalized recommendations.",
+        "description1": "South Goa offers a range of accommodations from luxury resorts to budget guesthouses and beach huts. Book in advance during peak season (December-January).",
+        "dscription2": "Palolem, Agonda, and Benaulim are ideal for budget travelers while Cavelossim and Mobor cater to luxury seekers.",
+        "description3": "Consider homestays like ApnaGoa Homestays for an authentic experience with local hosts who can provide personalized recommendations.",
         "note": "Beachfront accommodations may be more expensive but offer convenience and stunning views."
     },
     {
         "id": 3,
         "title": "Getting Around",
-        "description": "Rent a scooter (₹300-500/day) or motorbike for maximum flexibility - the best way to explore hidden beaches and villages.Auto-rickshaws and taxis are available but agree on fares before starting your journey. Consider Goa Miles app for metered taxi service.Public buses are economical but infrequent in South Goa. Private car rentals with drivers cost around ₹2,500-3,500/day.",
+        "description1": "  Rent a scooter (₹300-500/day) or motorbike for maximum flexibility - the best way to explore hidden beaches and villages.   ",
+        "description2": "Auto-rickshaws and taxis are available but agree on fares before starting your journey. Consider Goa Miles app for metered taxi service.",
+        "description3": "Public buses are economical but infrequent in South Goa. Private car rentals with drivers cost around ₹2,500-3,500/day.",
         "note": "Always wear helmets on two-wheelers and carry a valid driving license."
     },
     {
         "id": 4,
         "title": "Shopping",
-        "description": "Pick up souvenirs like Goan spices, cashew nuts, handicrafts, shell items, and feni (local liquor). Anjuna Flea Market is famous for bohemian clothing and accessories.Local art, ceramics, and handmade jewelry can be found in boutiques around Palolem and Margao. Bargaining is expected at markets and street stalls.For authentic spices, visit the Margao or Mapusa market where locals shop.",
+        "description1": "Pick up souvenirs like Goan spices, cashew nuts, handicrafts, shell items, and feni (local liquor). Anjuna Flea Market is famous for bohemian clothing and accessories.",
+        "dscription2": "Local art, ceramics, and handmade jewelry can be found in boutiques around Palolem and Margao. Bargaining is expected at markets and street stalls.",
+        "description3": "For authentic spices, visit the Margao or Mapusa market where locals shop.",
         "note": "Check cashew nut quality before purchase - they should be golden brown and crunchy.."
     },
     {
         "id": 5,
         "title": "Food & Dining",
-        "description": "Try authentic Goan cuisine including fish curry rice, xacuti, sorpotel, and bebinca dessert. Beach shacks offer fresh seafood at reasonable prices.Martin's Corner (Betalbatim), Fisherman's Wharf (Cavelossim), and Peninsula (Palolem) are highly recommended restaurants in South Goa.Explore local markets for fresh fruits, spices, and cashews. Wednesday Flea Market at Anjuna and Saturday Night Market at Arpora are worth visiting.",
+        "description1": "Try authentic Goan cuisine including fish curry rice, xacuti, sorpotel, and bebinca dessert. Beach shacks offer fresh seafood at reasonable prices.",
+        "dscription2": "Martin's Corner (Betalbatim), Fisherman's Wharf (Cavelossim), and Peninsula (Palolem) are highly recommended restaurants in South Goa.",
+        "description3": "Explore local markets for fresh fruits, spices, and cashews. Wednesday Flea Market at Anjuna and Saturday Night Market at Arpora are worth visiting.",
         "note": "Drink bottled water and ensure seafood is fresh and well-cooked."
     },
     {
         "id": 6,
         "title": "Safety & Etiquette",
-        "description": "South Goa is generally safe, but take standard precautions like securing valuables and avoiding isolated areas at night.Respect local customs and dress modestly when visiting religious sites. Ask permission before photographing locals or private property.Be aware of strong currents at some beaches - swim only in designated areas and heed warning flags.",
+        "description1": "South Goa is generally safe, but take standard precautions like securing valuables and avoiding isolated areas at night.",
+        "dscription2": "Respect local customs and dress modestly when visiting religious sites. Ask permission before photographing locals or private property.",
+        "description3": "Be aware of strong currents at some beaches - swim only in designated areas and heed warning flags.",
         "note": "Keep emergency numbers handy: Police: 100, Tourist Police: 1800-832-3224."
     }
 ]

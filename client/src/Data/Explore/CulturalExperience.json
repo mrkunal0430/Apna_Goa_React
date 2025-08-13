@@ -16,7 +16,7 @@
     },
     {
         "id": 2,
-        "name": "Portuguese Heritage Homes",
+        "title": "Portuguese Heritage Homes",
         "description": "Explore the magnificent colonial mansions that showcase a blend of Indian and Portuguese architectural styles. These heritage homes with their colorful facades, ornate balconies, and intricate tilework tell the story of Goa's colonial past.",
         "location": "Chandor, Loutolim, Quepem",
         "time": "9:00 AM - 5:00 PM",
@@ -31,7 +31,7 @@
     },
     {
         "id": 3,
-        "name": "Goan Feni Tasting",
+        "title": "Goan Feni Tasting",
         "description": "Sample Goa's traditional liquor made from cashew or coconut. Learn about the ancient distillation process and the cultural significance of this spirit that has received Geographical Indication status. Tastings often include varieties of feni with different aging and flavor profiles.",
         "location": "Cazulo Premium Feni, selected distilleries in South Goa",
         "time": "11:00 AM - 8:00 PM",
@@ -46,7 +46,7 @@
     },
     {
         "id": 4,
-        "name": "Churches and Temples Tour",
+        "title": "Churches and Temples Tour",
         "description": "Discover Goa's religious diversity by visiting its historic churches, Hindu temples, and Muslim mosques. Guided tours explain the architectural styles, religious traditions, and historical significance of these sacred places.",
         "location": "Se Cathedral, Shantadurga Temple, Safa Masjid",
         "time": "9:00 AM - 5:00 PM",
@@ -60,8 +60,8 @@
         }
     },
     {
-        "id": 1,
-        "name": "Local Craft Workshops",
+        "id": 5,
+        "title": "Local Craft Workshops",
         "description": "Participate in workshops to learn traditional Goan crafts like shell work, pottery, and coconut craft. These sessions provide insight into ancient techniques and offer a chance to create your own souvenirs under expert guidance.",
         "location": "Loutolim, Cuncolim",
         "time": "2-3 hours",
@@ -75,8 +75,8 @@
         }
     },
     {
-        "id": 1,
-        "name": "Goan Cooking Classes",
+        "id": 6,
+        "title": "Goan Cooking Classes",
         "description": "Learn to prepare authentic Goan dishes like vindaloo, xacuti, and bebinca from local chefs. These hands-on classes often include a market visit to source fresh ingredients, followed by preparation and communal dining.",
         "location": "Benaulim, Margao, Cavelossim",
         "time": "10:00 AM - 2:00 PM (Class duration: 3-4 hours)",

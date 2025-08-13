@@ -7,7 +7,9 @@ import Local_Event from "../Data/Explore/LocalEvent_festival.json";
 import Travel_tip from "../Data/Explore/Travel_Tips_Recomendation.json";
 
 import React from 'react';
-import SwiperSlider from "../components/SwiperSlider";
+import SwiperSlider from "../components/explore/SwiperSlider";
+import TravelTips_Recommendation from "../components/explore/Travel_Tips_Card";
+import ThreeDay_Day from "../components/explore/3day_iternary"
 
 
 
@@ -21,6 +23,7 @@ const Explore = () => {
                     className="w-full h-full object-cover"
                     src="../Explore/explore_top.jpg"
                     alt="Explore top banner"
+                    loading='lazy'
                 />
                 <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
                     <h1 className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-400 to-sky-400 mb-4">
@@ -36,14 +39,14 @@ const Explore = () => {
             <div className="px-4 sm:px-8 py-12 bg-gray-50">
                 <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Explore South Goa</h2>
 
-                <div>
+                <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Popular Destination</h3>
                     <p className="" >Discover the most beautiful and captivating locations that South Goa has to offer, from pristine beaches to historical landmarks.</p>
                     <div className="w-auto h-auto ">
                         <SwiperSlider slidesData={PopularDestination} type="explore" ></SwiperSlider>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-down">
                     <h3 className="text-2xl font-bold" >Local Events & Festivals</h3>
                     <p className="" >Experience the vibrant culture of Goa through its colorful festivals and
                         celebrations that showcase local traditions and customs.</p>
@@ -51,7 +54,7 @@ const Explore = () => {
                         <SwiperSlider slidesData={Local_Event} type="explore" ></SwiperSlider>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Adventure & Activities</h3>
                     <p className="" >Discover thrilling experiences and water sports that will make your South Goa
                         vacation memorable and exciting.</p>
@@ -61,7 +64,7 @@ const Explore = () => {
                 </div>
 
 
-                <div>
+                <div data-aos="fade-down">
                     <h3 className="text-2xl font-bold" >Cultural Experiences</h3>
                     <p className="" >Immerse yourself in the rich cultural heritage of South Goa through its
                         architecture, cuisine, art, and traditional performances.</p>
@@ -70,6 +73,37 @@ const Explore = () => {
                     </div>
                 </div>
 
+                <div>
+                    <h1>Travel Tips & Recommendations</h1>
+                    <p>Make the most of your South Goa experience with these practical tips and insider recommendations.</p>
+                    <div>
+                        <TravelTips_Recommendation></TravelTips_Recommendation>
+                    </div>
+                </div>
+
+                <div>
+                    <h1>Suggested 3-Day Itinerary</h1>
+                    <div>
+                        <ThreeDay_Day></ThreeDay_Day>
+                    </div>
+                </div>
+
+            </div>
+
+            <div className="travel-map p-6">
+                <h3 className="text-2xl font-bold text-center mb-4 text-gray-800">
+                    South Goa at a Glance
+                </h3>
+                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                    <iframe
+                        title="South Goa Map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122895.85640111915!2d74.03861326953124!3d15.208129500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb8337f679a7d%3A0x863e2fe3fc3bf21a!2sSouth%20Goa%2C%20Goa!5e0!3m2!1sen!2sin!4v1657376548211!5m2!1sen!2sin"
+                        className="w-full h-[450px]"
+                        style={{ border: "none" }}
+                        loading="lazy"
+                        allowFullScreen
+                    ></iframe>
+                </div>
             </div>
         </div>
     );

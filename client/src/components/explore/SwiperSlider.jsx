@@ -53,44 +53,14 @@ const SwiperSlider = ({
 
                 return (
                     <SwiperSlide key={index}>
-                        {type === 'image' && (
-                            <img
-                                src={slide.image}
-                                alt={`Slide ${index}`}
-                                className={`w-full object-cover rounded-lg ${slideHeight}`}
-                            />
-                        )}
 
-                        {type === 'review' && (
-                            <div className="bg-white p-6 rounded-lg shadow-lg max-w-xl mx-auto text-center">
-                                <img
-                                    src={slide.image}
-                                    alt="user"
-                                    className="w-16 h-16 rounded-full mx-auto mb-4 object-cover"
-                                />
-                                <p className="text-gray-600 italic">"{slide.review}"</p>
-                                <h4 className="mt-4 font-semibold text-lg">{slide.name}</h4>
-                            </div>
-                        )}
 
-                        {type === 'content' && (
-                            <div className="relative w-full rounded-lg overflow-hidden">
-                                <img
-                                    src={slide.image}
-                                    alt={slide.title}
-                                    className={`w-full object-cover ${slideHeight}`}
-                                />
-                                <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center p-4">
-                                    <h3 className="text-xl font-bold">{slide.title}</h3>
-                                    <p className="text-sm mt-2">{slide.desc}</p>
-                                </div>
-                            </div>
-                        )}
+
 
                         {type === 'services' && (
                             <div className="relative max-w-sm bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                                 <div className="relative">
-                                    <img className="w-full h-56 object-cover" src={slide.images} alt={slide.image} />
+                                    <img className="w-full h-56 object-cover" loading='lazy' src={slide.images} alt={slide.image} />
                                     <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md">
                                         {IconComponent && <IconComponent className="text-orange-500 text-xl" />}
                                     </div>
@@ -117,6 +87,7 @@ const SwiperSlider = ({
                                         src={slide.image}
                                         alt={slide.title}
                                         className="w-full h-56 object-cover"
+                                        loading='lazy'
                                     />
                                     <div className="absolute top-0 left-0 bg-black bg-opacity-40 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                                         <a
