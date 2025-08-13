@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Palolem Beach",
+        "image": "https://mediaim.expedia.com/destination/1/945131cf95e8c1a31d5978c1e91a370f.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh",
+        "description": "A crescent-shaped beach with calm waters and colorful wooden huts, perfect for swimming and relaxation. Often referred to as Paradise Beach, Palolem offers gentle waves and stunning sunset views.",
+        "location": "Canacona, South Goa",
+        "time": "Best Time: 6:00 AM - 7:00 PM (Best at sunrise or sunset)",
+        "price": "Free entry; Water activities from ₹500",
+        "map": "https://maps.app.goo.gl/J4Sw7UN6CNHgxprN6",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Agonda Beach",
+        "image": "https://media.istockphoto.com/id/1353081980/photo/beach-at-goa-beach-india.jpg?s=612x612&w=0&k=20&c=cgZ2Js46Hk8a1qJlPMI_PbcGFoQ2XvBcFZcxIpFA0CM=",
+        "description": "A quiet, pristine beach known for its unspoiled beauty and serene atmosphere. Perfect for those seeking tranquility away from the crowds, with opportunities to spot sea turtles during nesting season.",
+        "location": "Agonda, South Goa",
+        "time": "Open 24 hours (Best time: Early morning or evening)",
+        "price": "Free entry; Beach shacks from ₹300",
+        "map": "https://maps.app.goo.gl/kcZU7r6JE8EifjhV8",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Cabo de Rama Fort",
+        "image": "https://www.bing.com/images/search?view=detailV2&ccid=ewu0cj1D&id=BCF1D8D7D7E490727CBBCAB8139DB9076C234AA6&thid=OIP.ewu0cj1D6C-URY25qD0D4AHaD8&mediaurl=https%3a%2f%2fgoa-tourism.org.in%2fimages%2ftourist-places%2fcabo-de-rama-fort-goa%2fcabo-de-rama-fort-goa-india-tourism-photo-gallery.jpg&exph=400&expw=750&q=Cabo+de+Rama+Fort&FORM=IRPRST&ck=050A4660FBCC06F907A2E7BF5FFBC6EC&selectedIndex=9&itb=0",
+        "description": "An ancient fort with panoramic views of the Arabian Sea, rich in history and legends. Originally built by local rulers and later expanded by the Portuguese, it offers stunning coastal vistas.",
+        "location": "Canacona, South Goa",
+        "time": "9:00 AM - 5:30 PM (Closed on Mondays)",
+        "price": "Entry fee: ₹50 per person",
+        "map": "https://maps.app.goo.gl/8c5GWsbEPPZ968xNA",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Butterfly Beach",
+        "image": "https://assets.traveltriangle.com/blog/wp-content/uploads/2017/04/kw-110417-A-traveler-enjoying-a-sunset-at-the-Butterfly-beach-in-Goa.jpg",
+        "description": "A hidden cove accessible by boat or trek, famous for its butterfly sightings and dolphin watching. This secluded paradise offers a crescent-shaped golden sand beach surrounded by dense forests.",
+        "location": "Near Palolem, South Goa",
+        "time": "Best Time: 8:00 AM - 6:00 PM",
+        "price": "Boat ride: ₹800-1200 per trip",
+        "map": "https://maps.app.goo.gl/nK1gTP6NQaGeaDnF8",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 5,
+        "title": "Cotigao Wildlife Sanctuary",
+        "image": "https://aryango.com/wp-content/uploads/2022/12/Bor-Tiger-Reserve-Maharashtra-1024x576.webp",
+        "description": "One of Goa's oldest wildlife sanctuaries, home to diverse flora and fauna including rare species like the flying squirrel and slender loris. Features a 25m high treetop watchtower for wildlife observation.",
+        "location": "Canacona, South Goa",
+        "time": "7:00 AM - 5:30 PM (Daily)",
+        "price": "Entry: ₹100 (Indians), ₹300 (Foreigners)",
+        "map": "https://maps.app.goo.gl/5ARQ9MvT6HSJCPSx8",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 6,
+        "title": "Cola Beach",
+        "image": "https://content.jdmagicbox.com/comp/goa/j1/0832px832.x832.110104164747.t7j1/catalogue/cola-beach-resort-canacona-goa-resorts-7l05qh58eq.jpg?w=3840&q=75",
+        "description": "A secluded beach with a beautiful freshwater lagoon adjacent to the sea. This hidden gem offers a unique landscape where the blue sea meets the emerald lagoon, creating a perfect spot for photography.",
+        "location": "Canacona, South Goa",
+        "time": "Open 24 hours (Best time: Morning for photography)",
+        "price": "Free entry; Lagoon kayaking: ₹300 per hour",
+        "map": "https://maps.app.goo.gl/R3tghTD9mE9CMdcV7",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    }
+]

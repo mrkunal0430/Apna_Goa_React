@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "title": "Beaches & Relaxation",
+        "description0": [
+            {
+                "time": "Morning",
+                "activity": "Visit Shantadurga Temple and Mangueshi Temple"
+            },
+            {
+                "time": "Late Morning",
+                "activity": "Explore Old Goa churches"
+            },
+            {
+                "time": "Afternoon",
+                "activity": "Lunch at a traditional Goan restaurant"
+            },
+            {
+                "time": "Evening",
+                "activity": "Tour of Portuguese heritage homes in Chandor"
+            },
+            {
+                "time": "Night",
+                "activity": "Cultural show with dinner"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Beaches & Relaxation",
+        "description0": [
+            {
+                "time": "Morning",
+                "activity": "Visit Shantadurga Temple and Mangueshi Temple"
+            },
+            {
+                "time": "Late Morning",
+                "activity": "Explore Old Goa churches"
+            },
+            {
+                "time": "Afternoon",
+                "activity": "Lunch at a traditional Goan restaurant"
+            },
+            {
+                "time": "Evening",
+                "activity": "Tour of Portuguese heritage homes in Chandor"
+            },
+            {
+                "time": "Night",
+                "activity": "Cultural show with dinner"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Beaches & Relaxation",
+        "description0": [
+            {
+                "time": "Morning",
+                "activity": "Visit Shantadurga Temple and Mangueshi Temple"
+            },
+            {
+                "time": "Late Morning",
+                "activity": "Explore Old Goa churches"
+            },
+            {
+                "time": "Afternoon",
+                "activity": "Lunch at a traditional Goan restaurant"
+            },
+            {
+                "time": "Evening",
+                "activity": "Tour of Portuguese heritage homes in Chandor"
+            },
+            {
+                "time": "Night",
+                "activity": "Cultural show with dinner"
+            }
+        ]
+    }
+]

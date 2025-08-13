@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "title": "Scuba Diving",
+    "description": "Explore the underwater world of Goa with certified diving instructors. Discover colorful coral reefs, exotic marine life, and even shipwrecks on these guided underwater adventures.",
+    "location": "Grande Island,Bogmalo Beach",
+    "time": "8:00 AM - 4:00 PM (Seasional : October to May)",
+    "price": "₹3,500 - ₹5,000 per dive (includes equipment)",
+    "note": "No experience needed; beginners welcome with training",
+    "image": "https://images4.alphacoders.com/951/951326.jpg",
+    "map": "https://www.google.com/search?q=scuba+diving+south+goa",
+    "icons": {
+      "location": "FaMapMarkerAlt",
+      "time": "FaClock",
+      "price": "FaRupeeSign",
+      "note": "FaUsers"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Dolphin Watching",
+    "description": "Set sail on an early morning boat trip to spot playful dolphins in their natural habitat. The Arabian Sea off South Goa's coast is home to humpback dolphins that are regularly spotted near the shore.",
+    "location": "Palolem Beach,Agonda Beach,Colva Beach",
+    "time": "7:00 AM - 9:00 AM (Best time for sightings)",
+    "price": "₹300 - ₹500 per person (1-hour trip)",
+    "note": "Family-friendly; Children of all ages welcome",
+    "image": "https://www.andamantourism.org/wp-content/uploads/2024/01/Dolphin-Watching-in-Andaman.jpg",
+    "map": "https://www.google.com/search?q=dolphin+watching+south+goa",
+    "icons": {
+      "location": "FaMapMarkerAlt",
+      "time": "FaClock",
+      "price": "FaRupeeSign",
+      "note": "FaUsers"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Kayaking",
+    "description": "Paddle through serene backwaters, mangrove forests, and calm river estuaries. South Goa offers various kayaking routes that allow you to explore hidden beaches and observe local wildlife.",
+    "location": "Palolem Beach,Chapora River,Sal Backwaters",
+    "time": "7:00 AM - 6:00 PM (Sunset kayaking available)",
+    "price": "₹300 - ₹800 per hour (Single/Double kayaks)",
+    "note": "Basic swimming skills recommended; life jackets provided",
+    "image": "https://images.pexels.com/photos/1430672/pexels-photo-1430672.jpeg",
+    "map": "https://www.google.com/search?q=kayaking+in+south+goa",
+    "icons": {
+      "location": "FaMapMarkerAlt",
+      "time": "FaClock",
+      "price": "FaRupeeSign",
+      "note": "FaUsers"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Spice Plantation Tour",
+    "description": "Walk through aromatic gardens learning about spices that make Goan cuisine unique. These guided tours offer insight into cultivation practices and often include traditional Goan lunch served on banana leaves.",
+    "location": "Ponda,Netravali,Savoi",
+    "time": "9:00 AM - 5:00 PM (Tours start every hour)",
+    "price": "₹400 - ₹700 (includes guided tour and lunch)",
+    "note": "Educational and sensory experience; suitable for all ages",
+    "image": "https://cdn.getyourguide.com/img/tour/5d45936b42076.jpeg/148.jpg",
+    "map": "https://www.google.com/search?q=spice+plantation+tour+south+goa",
+    "icons": {
+      "location": "FaMapMarkerAlt",
+      "time": "FaClock",
+      "price": "FaRupeeSign",
+      "note": "FaUsers"
+    }
+  },
+  {
+    "id": 5,
+    "title": "River Cruise",
+    "description": "Enjoy a leisurely cruise along the Mandovi or Sal River with live music, cultural performances, and delicious Goan cuisine. These sunset cruises offer spectacular views and entertainment for all ages.",
+    "location": "Mandovi River,Santa Monica Jetty",
+    "time": "6:00 PM - 8:00 PM (Sunset Cruise)",
+    "price": "₹500 - ₹1,000 per person (depends on package)",
+    "note": "Cultural performances showcase Goan traditions; dinner options available",
+    "image": "https://images.pexels.com/photos/1482193/pexels-photo-1482193.jpeg",
+    "map": "https://www.google.com/search?q=river+cruise+south+goa",
+    "icons": {
+      "location": "FaMapMarkerAlt",
+      "time": "FaClock",
+      "price": "FaRupeeSign",
+      "note": "FaUsers"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Parasailing",
+    "description": "Soar high above the Arabian Sea for breathtaking aerial views of Goa's coastline. This exhilarating activity combines the thrill of flying with panoramic vistas of beaches, cliffs, and ocean.",
+    "location": "Colva Beach,Majorda Beach,Mobor Beach",
+    "time": "10:00 AM - 5:00 PM (Weather permitting)",
+    "price": "₹1,200 - ₹1,800 per person (10-15 minutes)",
+    "note": "Weight restrictions apply; tandem rides available",
+    "image": "https://images.pexels.com/photos/1604869/pexels-photo-1604869.jpeg",
+    "map": "https://www.google.com/search?q=parasailing+south+goa",
+    "icons": {
+      "location": "FaMapMarkerAlt",
+      "time": "FaClock",
+      "price": "FaRupeeSign",
+      "note": "FaUsers"
+    }
+  }
+]
