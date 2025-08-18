@@ -1,6 +1,32 @@
 import React, { useEffect } from 'react';
+import { motion } from "framer-motion";
+import { FaHome, FaSmile, FaWhatsapp, FaMapMarkedAlt, FaUserFriends, FaCrown } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+
+
+const features = [
+    {
+        icon: <FaMapMarkedAlt className="text-4xl text-emerald-500" />,
+        title: "Local Knowledge",
+        desc: "Born and raised in Goa, we’ll guide you to hidden beaches, secret restaurants, and experiences no tourist map shows.",
+        color: "from-emerald-100 to-emerald-50",
+    },
+    {
+        icon: <FaUserFriends className="text-4xl text-pink-500" />,
+        title: "Personalized Attention",
+        desc: "Every guest is unique. We customize your stay — adventure, relaxation, food, or culture — just how you love it.",
+        color: "from-pink-100 to-pink-50",
+    },
+    {
+        icon: <FaCrown className="text-4xl text-yellow-500" />,
+        title: "Luxury Amenities",
+        desc: "From private pools to premium bedding, our stays are designed for comfort, elegance, and unforgettable moments.",
+        color: "from-yellow-100 to-yellow-50",
+    },
+];
+
 
 const About = () => {
     useEffect(() => {
@@ -19,6 +45,122 @@ const About = () => {
                 />
             </div>
 
+            <section className="relative bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 text-white py-16 px-6 lg:px-20 overflow-hidden">
+                {/* Background overlay */}
+                <div className="absolute inset-0 bg-black/40"></div>
+
+                <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+                    {/* Left Side - Text */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="space-y-6"
+                    >
+                        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                            Welcome to <span className="text-yellow-300">ApnaGoa Homestays</span>
+                        </h1>
+                        <p className="text-lg md:text-xl text-gray-100 leading-relaxed">
+                            Discover the charm of South Goa with our handpicked
+                            <span className="font-semibold text-yellow-200"> villas and apartments</span>.
+                            Owned and hosted by locals, we ensure every guest feels at home while
+                            experiencing Goa’s beaches, culture, and tranquility.
+                        </p>
+
+                        {/* Features */}
+                        <div className="flex gap-6 mt-6">
+                            <div className="flex items-center gap-2">
+                                <FaHome className="text-yellow-300 text-2xl" />
+                                <span className="font-medium">Premium Properties</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <FaSmile className="text-yellow-300 text-2xl" />
+                                <span className="font-medium">Owner as Host</span>
+                            </div>
+                        </div>
+
+                        {/* CTA */}
+                        <div className="mt-8 flex gap-4">
+                            <a
+                                href="#properties"
+                                className="bg-yellow-400 text-black px-6 py-3 rounded-2xl font-semibold shadow-lg hover:bg-yellow-300 transition"
+                            >
+                                Explore Properties
+                            </a>
+                            <a
+                                href="https://wa.me/91XXXXXXXXXX"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 border-2 border-yellow-400 px-6 py-3 rounded-2xl font-semibold hover:bg-yellow-400 hover:text-black transition"
+                            >
+                                <FaWhatsapp className="text-xl" /> Chat with Owner
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    {/* Right Side - Image + Host Card */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="relative"
+                    >
+                        <img
+                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+                            alt="Luxury Villa Goa"
+                            className="rounded-2xl shadow-2xl w-full object-cover"
+                        />
+
+                        {/* Floating Host Card */}
+                        <div className="absolute -bottom-6 -left-6 bg-white text-gray-800 p-4 rounded-2xl shadow-lg w-64 flex items-center gap-4">
+                            <div className='absolute -left-2  transform -translate-x-1/2'>
+                                <img
+                                    src="poonam.jpg"
+                                    alt="Owner Host"
+                                    className="w-30 h-30 rounded-full object-cover border-2 border-yellow-400"
+                                />
+                            </div>
+
+                            <div className='pl-12'>
+                                <h3 className="font-bold text-lg">Meet Poonam</h3>
+                                <p className="text-sm text-gray-600">
+                                    Owner & Host of ApnaGoa Homestays. Passionate about hospitality
+                                    and making your stay truly memorable.
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
+            <section className="py-16 px-6 lg:px-20 bg-gradient-to-b from-gray-50 to-white">
+                <div className="max-w-6xl mx-auto text-center">
+                    <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-12">
+                        What Makes Us <span className="text-emerald-500">Different</span>
+                    </h2>
+
+                    {/* Features Grid */}
+                    <div className="grid md:grid-cols-3 gap-10">
+                        {features.map((f, i) => (
+                            <motion.div
+                                key={i}
+                                whileHover={{ y: -10, scale: 1.05 }}
+                                className={`p-8 rounded-2xl shadow-xl bg-gradient-to-br ${f.color} relative`}
+                            >
+                                {/* Floating Circular Icon */}
+                                <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-white rounded-full shadow-lg p-5">
+                                    {f.icon}
+                                </div>
+
+                                <div className="mt-10">
+                                    <h3 className="text-xl font-bold text-gray-800">{f.title}</h3>
+                                    <p className="text-gray-600 mt-3 leading-relaxed">{f.desc}</p>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             <div className="bg-gradient-to-br from-pink-50 via-blue-50 to-purple-50 text-gray-800 px-6 py-12" >
                 <div className="max-w-6xl mx-auto">
@@ -33,7 +175,7 @@ const About = () => {
                     {/* Hero Section */}
                     <div className="flex flex-col md:flex-row items-center gap-10 mb-14" data-aos="fade-up">
                         <img
-                            src="/Pics/bg.jpg"
+                            src="/Villa/bg.jpg"
                             alt="ApnaGoa Property"
                             className="w-full md:w-1/2 rounded-xl shadow-xl object-cover"
                             loading='lazy'

@@ -21,7 +21,7 @@ const Explore = () => {
             <div className="relative w-full h-[60vh] md:h-[90vh] overflow-hidden">
                 <img
                     className="w-full h-full object-cover"
-                    src="../Explore/explore_top.jpg"
+                    src="explore_top.jpg"
                     alt="Explore top banner"
                     loading='lazy'
                 />
@@ -46,7 +46,7 @@ const Explore = () => {
                         <SwiperSlider slidesData={PopularDestination} type="explore" ></SwiperSlider>
                     </div>
                 </div>
-                <div data-aos="fade-down">
+                <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Local Events & Festivals</h3>
                     <p className="" >Experience the vibrant culture of Goa through its colorful festivals and
                         celebrations that showcase local traditions and customs.</p>
@@ -64,7 +64,7 @@ const Explore = () => {
                 </div>
 
 
-                <div data-aos="fade-down">
+                <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Cultural Experiences</h3>
                     <p className="" >Immerse yourself in the rich cultural heritage of South Goa through its
                         architecture, cuisine, art, and traditional performances.</p>
