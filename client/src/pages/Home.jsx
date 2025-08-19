@@ -26,7 +26,7 @@ const Home = () => {
     return (
         <div className="w-full">
             {/* Hero Slider Section */}
-            <div className="h-[calc(100vh-64px)]">
+            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)]">
                 <Swiper
                     modules={[Autoplay, Pagination]}
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -37,9 +37,9 @@ const Home = () => {
                     {images.map((img, index) => (
                         <SwiperSlide key={index} className="w-full h-full relative">
                             <img
-                                src={img.src || '/fallback.jpg'}
-                                alt={img.alt || 'ApnaGoa Stay'}
-                                className="w-full h-full object-cover"
+                                src={img.src || "/fallback.jpg"}
+                                alt={img.alt || "ApnaGoa Stay"}
+                                className="w-full h-full object-cover object-center"
                                 loading="lazy"
                             />
                         </SwiperSlide>
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
 
             {/* Testimonial Section */}
-            <div className="py-12 px-4 bg-gradient-to-br from-pink-200 via-yellow-100 to-white">
+            <div className="pt-5 px-4 bg-gradient-to-br from-pink-200 via-yellow-100 to-white">
                 <h2
                     className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8"
                     data-aos="fade-up"
@@ -58,34 +58,45 @@ const Home = () => {
                 <TestimonialCard />
             </div>
 
-            <div className="py-10 px-4 sm:px-6 lg:px-6 flex flex-col gap-10 lg:gap-16 lg:flex-row items-center lg:items-start max-w-7xl mx-auto">
-                {/* Rating Card */}
-                <div className="w-full h-full sm:w-2/3 md:w-1/2 lg:w-1/4 border rounded-3xl bg-gradient-to-br from-amber-200 via-blue-200 to-cyan-200 flex flex-col justify-center items-center text-center p-6 space-y-4 shadow-lg">
+
+
+            <div className="py-10 px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-start max-w-7xl mx-auto">      {/* Rating Card */}
+                <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/3 xl:w-1/4 border rounded-3xl bg-gradient-to-br from-amber-200 via-blue-200 to-cyan-200 flex flex-col justify-center items-center text-center p-6 sm:p-8 space-y-4 shadow-lg">
                     {/* Stars */}
                     <div className="flex justify-center space-x-1 text-green-500">
-                        <FaStar className="text-xl sm:text-2xl mt-4" />
-                        <FaStar className="text-2xl sm:text-3xl mt-2" />
-                        <FaStar className="text-3xl sm:text-4xl" />
-                        <FaStar className="text-2xl sm:text-3xl mt-2" />
-                        <FaStar className="text-xl sm:text-2xl mt-4" />
+                        <FaStar className="text-base sm:text-xl md:text-2xl mt-3 sm:mt-4" />
+                        <FaStar className="text-lg sm:text-2xl md:text-3xl mt-2" />
+                        <FaStar className="text-xl sm:text-3xl md:text-4xl" />
+                        <FaStar className="text-lg sm:text-2xl md:text-3xl mt-2" />
+                        <FaStar className="text-base sm:text-xl md:text-2xl mt-3 sm:mt-4" />
                     </div>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-600">4.5</h2>
-                    <a href="#" className="text-green-600 font-semibold hover:underline text-base sm:text-lg">
+
+                    {/* Rating Number */}
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-600">
+                        4.5
+                    </h2>
+
+                    {/* Reviews */}
+                    <a
+                        href="#"
+                        className="text-green-600 font-semibold hover:underline text-sm sm:text-base md:text-lg"
+                    >
                         13,7 Reviews
                     </a>
-                    <p className="text-gray-600 text-sm sm:text-base">
-                        by customers from <span className="font-bold">13+ states & Countries</span>
+
+                    {/* Subtext */}
+                    <p className="text-gray-600 text-xs sm:text-sm md:text-base">
+                        by customers from{" "}
+                        <span className="font-bold">13+ states & Countries</span>
                     </p>
                 </div>
 
+
                 {/* Property Showcase */}
-                <div className="w-full lg:flex-1 p-4">
+                <div className="w-full lg:flex-1">
                     <PropertyShowcase />
                 </div>
             </div>
-
-
-
         </div>
     );
 };

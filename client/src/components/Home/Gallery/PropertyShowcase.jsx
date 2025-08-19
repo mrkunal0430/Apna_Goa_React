@@ -4,7 +4,7 @@ import properties from "../../../Data/Home/villa_Apartment.json";
 
 export default function PropertyShowcase() {
     return (
-        <div className="p-4 md:p-6 grid gap-18 sm:grid-cols-1 lg:grid-cols-2">
+        <div className="p-4 md:p-6 grid gap-10 sm:grid-cols-1 lg:grid-cols-2 overflow-hidden">
             {properties.map((property, index) => (
                 <PropertyCard key={index} property={property} />
             ))}
