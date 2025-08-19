@@ -7,6 +7,7 @@ import Premium from '../Data/Service/Premium.json';
 
 
 
+
 const services = [
     {
         title: "Beachside Villas",
@@ -43,11 +44,6 @@ const Service = () => {
     const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
     return (
         <div>
-
-
-
-
-
             <div className="flex">
                 <section className="w-1/2">
                     efoiw
@@ -71,16 +67,18 @@ const Service = () => {
                             {services.map((s, i) => (
                                 <motion.div
                                     key={i}
-                                    initial={{ opacity: 0, x: i % 2 === 0 ? -100 : 100 }}
+                                    // initial={{ opacity: 0, x: i % 2 === 0 ? -100 : 100 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true, amount: 0.3 }}
-                                    transition={{ duration: 0.8, delay: i * 0.2 }}
+                                    // transition={{ duration: 0.8, delay: i * 0.2 }}
                                     className={`relative flex items-center pl-20`}
+                                    data-aos="fade-up"
                                 >
 
 
                                     {/* Content Box */}
                                     <div
+                                        data-aos="fade-up"
                                         className={` w-[80vh] p-6 bg-white shadow-lg rounded-2xl hover:shadow-2xl transition `}
                                     >
                                         <div className="flex items-center gap-3 mb-3">
@@ -97,8 +95,9 @@ const Service = () => {
                                         viewport={{ once: true, amount: 0.5 }}
                                         transition={{ duration: 0.5, delay: i * 0.2 }}
                                         className="absolute left-1/9 transform -translate-x-1/2  shadow-md w-14 h-14 rounded-full flex items-center justify-center"
+
                                     >
-                                        <div className="w-14 h-14 border-8 border-emerald-400 rounded-full shadow-lg"></div>
+                                        <div data-aos="fade-up" className="w-14 h-14 border-8 border-emerald-400 rounded-full shadow-lg"></div>
                                     </motion.div>
                                 </motion.div>
                             ))}
