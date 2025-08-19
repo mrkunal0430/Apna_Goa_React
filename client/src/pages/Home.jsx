@@ -40,63 +40,52 @@ const Home = () => {
                                 src={img.src || '/fallback.jpg'}
                                 alt={img.alt || 'ApnaGoa Stay'}
                                 className="w-full h-full object-cover"
-                                loading='lazy'
+                                loading="lazy"
                             />
-
-                            {/* Optional Overlay Title */}
-                            {/* <div className="absolute inset-0 bg-black bg-opacity-40 z-10 flex items-center justify-center">
-                                <h1 className="text-white text-2xl md:text-4xl font-bold text-center px-4">
-                                    Welcome to ApnaGoa Homestays
-                                </h1>
-                            </div> */}
                         </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
 
             {/* Testimonial Section */}
-            <div className=" py-12 px-4 bg-gradient-to-br from-pink-200 via-yellow-100 to-white" >
-                <h2 className="text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-up">
+            <div className="py-12 px-4 bg-gradient-to-br from-pink-200 via-yellow-100 to-white">
+                <h2
+                    className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8"
+                    data-aos="fade-up"
+                >
                     Listen to what our guests have to say
                 </h2>
                 <TestimonialCard />
             </div>
 
-            <div className='p-10 flex gap-20'>
-
-                <div className="my-20 w-1/4 border rounded-4xl bg-gradient-to-br from-amber-200 via-blue-200 to-cyan-200 flex flex-col justify-center items-center text-center space-y-2">
+            <div className="py-10 px-4 sm:px-6 lg:px-6 flex flex-col gap-10 lg:gap-16 lg:flex-row items-center lg:items-start max-w-7xl mx-auto">
+                {/* Rating Card */}
+                <div className="w-full h-full sm:w-2/3 md:w-1/2 lg:w-1/4 border rounded-3xl bg-gradient-to-br from-amber-200 via-blue-200 to-cyan-200 flex flex-col justify-center items-center text-center p-6 space-y-4 shadow-lg">
                     {/* Stars */}
-                    <div className="flex space-x-1 text-green-500">
-                        <FaStar className="text-xl mt-7" />
-                        <FaStar className="text-2xl mt-3.5" />
-                        <FaStar className="text-3xl" />
-                        <FaStar className="text-2xl mt-3.5" />
-                        <FaStar className="text-xl mt-7" />
+                    <div className="flex justify-center space-x-1 text-green-500">
+                        <FaStar className="text-xl sm:text-2xl mt-4" />
+                        <FaStar className="text-2xl sm:text-3xl mt-2" />
+                        <FaStar className="text-3xl sm:text-4xl" />
+                        <FaStar className="text-2xl sm:text-3xl mt-2" />
+                        <FaStar className="text-xl sm:text-2xl mt-4" />
                     </div>
-
-                    {/* Rating Number */}
-                    <h2 className="text-4xl font-bold text-green-600">4.5</h2>
-
-                    {/* Reviews */}
-                    <a
-                        href="#"
-                        className="text-green-600 font-semibold hover:underline text-lg"
-                    >
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-600">4.5</h2>
+                    <a href="#" className="text-green-600 font-semibold hover:underline text-base sm:text-lg">
                         13,7 Reviews
                     </a>
-
-                    {/* Subtext */}
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 text-sm sm:text-base">
                         by customers from <span className="font-bold">13+ states & Countries</span>
                     </p>
                 </div>
 
-
-                <div>
-                    <PropertyShowcase></PropertyShowcase>
+                {/* Property Showcase */}
+                <div className="w-full lg:flex-1 p-4">
+                    <PropertyShowcase />
                 </div>
-
             </div>
+
+
+
         </div>
     );
 };

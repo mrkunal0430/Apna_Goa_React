@@ -42,18 +42,8 @@ import "swiper/css/effect-cards";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// const images = [
-//     "/Villa/17.jpg",
-//     "/Villa/46.jpg",
-//     "/Villa/45.jpg",
-//     "/Villa/15.jpg",
-//     "/Villa/3.jpg",
-//     "/Villa/14.jpg",
-//     "/Villa/4.jpg",
-//     "/Villa/28.jpg",
-// ];
 
-export default function CardGallery({ property }) {
+export default function PropertyCard({ property }) {
     const [isOpen, setIsOpen] = useState(false);
     const [startIndex, setStartIndex] = useState(0);
 
@@ -73,10 +63,10 @@ export default function CardGallery({ property }) {
                 loop={true}
                 autoplay={{
                     delay: 2000,
-                    disableOnInteraction: false, // keep autoplay even if user interacts
+                    disableOnInteraction: false,
                 }}
-                modules={[EffectCards, Autoplay]} // Added Autoplay here
-                className="w-72 h-96"
+                modules={[EffectCards, Autoplay]}
+                className="w-70 max-w-xl sm:max-w-sm h-80 sm:h-96"
             >
                 {property.images.map((src, i) => (
                     <SwiperSlide
@@ -92,6 +82,7 @@ export default function CardGallery({ property }) {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
 
             {/* Caption */}
             <button className="px-4 py-2 bg-white shadow rounded-lg text-sm hover:bg-gray-100">
