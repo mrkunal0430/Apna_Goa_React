@@ -15,7 +15,7 @@ import ThreeDay_Day from "../components/explore/3day_iternary"
 
 const Explore = () => {
     return (
-        <div className="w-full min-h-screen bg-white">
+        <div className="w-full min-h-screen ">
 
             {/* Banner Section */}
             <div className="relative w-full h-[60vh] md:h-[90vh] overflow-hidden">
@@ -36,19 +36,20 @@ const Explore = () => {
             </div>
 
             {/* Explore Grid Section */}
-            <div className="px-4 sm:px-8 py-12 bg-gray-50">
+            <div className="px-4 sm:px-8 py-12 bg-gradient-to-tr from-orange-100 via-rose-100 to-yellow-100">
+
                 <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Explore South Goa</h2>
 
                 <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Popular Destination</h3>
-                    <p className="" >Discover the most beautiful and captivating locations that South Goa has to offer, from pristine beaches to historical landmarks.</p>
+                    <p className="py-4" >Discover the most beautiful and captivating locations that South Goa has to offer, from pristine beaches to historical landmarks.</p>
                     <div className="w-auto h-auto ">
                         <SwiperSlider slidesData={PopularDestination} type="explore" ></SwiperSlider>
                     </div>
                 </div>
                 <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Local Events & Festivals</h3>
-                    <p className="" >Experience the vibrant culture of Goa through its colorful festivals and
+                    <p className="py-4" >Experience the vibrant culture of Goa through its colorful festivals and
                         celebrations that showcase local traditions and customs.</p>
                     <div className="w-auto h-auto ">
                         <SwiperSlider slidesData={Local_Event} type="explore" ></SwiperSlider>
@@ -56,7 +57,7 @@ const Explore = () => {
                 </div>
                 <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Adventure & Activities</h3>
-                    <p className="" >Discover thrilling experiences and water sports that will make your South Goa
+                    <p className="py-4" >Discover thrilling experiences and water sports that will make your South Goa
                         vacation memorable and exciting.</p>
                     <div>
                         <SwiperSlider slidesData={Adventure_Activity} type="explore" ></SwiperSlider>
@@ -66,7 +67,7 @@ const Explore = () => {
 
                 <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Cultural Experiences</h3>
-                    <p className="" >Immerse yourself in the rich cultural heritage of South Goa through its
+                    <p className="py-4" >Immerse yourself in the rich cultural heritage of South Goa through its
                         architecture, cuisine, art, and traditional performances.</p>
                     <div>
                         <SwiperSlider slidesData={Cultural_Experience} type="explore" ></SwiperSlider>
@@ -74,15 +75,15 @@ const Explore = () => {
                 </div>
 
                 <div>
-                    <h1>Travel Tips & Recommendations</h1>
-                    <p>Make the most of your South Goa experience with these practical tips and insider recommendations.</p>
+                    <h1 className="text-2xl font-bold">Travel Tips & Recommendations</h1>
+                    <p className="pt-3">Make the most of your South Goa experience with these practical tips and insider recommendations.</p>
                     <div>
                         <TravelTips_Recommendation></TravelTips_Recommendation>
                     </div>
                 </div>
 
                 <div>
-                    <h1>Suggested 3-Day Itinerary</h1>
+                    <h1 className="text-2xl font-bold">Suggested 3-Day Itinerary</h1>
                     <div>
                         <ThreeDay_Day></ThreeDay_Day>
                     </div>
@@ -90,7 +91,7 @@ const Explore = () => {
 
             </div>
 
-            <div className="travel-map p-6">
+            <div className="travel-map p-6 bg-gradient-to-tr from-yellow-100 via-rose-100 to-orange-100">
                 <h3 className="text-2xl font-bold text-center mb-4 text-gray-800">
                     South Goa at a Glance
                 </h3>

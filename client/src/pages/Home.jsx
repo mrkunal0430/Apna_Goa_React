@@ -24,7 +24,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="w-full">
+        <div className="w-full ">
             {/* Hero Slider Section */}
             <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)]">
                 <Swiper
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
 
             {/* Testimonial Section */}
-            <div className="pt-5 px-4 bg-gradient-to-br from-pink-200 via-yellow-100 to-white">
+            <div className="py-5 bg-gradient-to-tr from-orange-50 via-rose-50 to-yellow-50">
                 <h2
                     className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8"
                     data-aos="fade-up"
@@ -58,9 +58,7 @@ const Home = () => {
                 <TestimonialCard />
             </div>
 
-
-
-            <div className="py-10 px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-start max-w-7xl mx-auto">      {/* Rating Card */}
+            <div className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-tr from-orange-50 via-rose-50 to-yellow-50 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-start max-w-full ">      {/* Rating Card */}
                 <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/3 xl:w-1/4 border rounded-3xl bg-gradient-to-br from-amber-200 via-blue-200 to-cyan-200 flex flex-col justify-center items-center text-center p-6 sm:p-8 space-y-4 shadow-lg">
                     {/* Stars */}
                     <div className="flex justify-center space-x-1 text-green-500">

@@ -15,7 +15,7 @@ const TestimonialCard = () => {
     }, []);
 
     return (
-        <div className="px-4 py-10 bg-gradient-to-br from-pink-200 via-yellow-100 to-white border-none">
+        <div className="px-6 bg-gradient-to-tr from-orange-50 via-rose-50 to-yellow-50">
             <Swiper
                 modules={[Autoplay, Pagination]}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}

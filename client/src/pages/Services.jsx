@@ -1,11 +1,16 @@
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { FaUmbrellaBeach, FaShuttleVan, FaWifi, FaUtensils, FaRegSnowflake, FaSpa, FaConciergeBell } from 'react-icons/fa';
 import SwiperSlider from '../components/explore/SwiperSlider';
 import Complimentary from '../Data/Service/Complimentary.json';
 import Premium from '../Data/Service/Premium.json';
 
-
+const images = [
+    "Home-Swap-images/1.jpg",
+    "Home-Swap-images/1.jpg",
+    "Home-Swap-images/1.jpg",
+    "Home-Swap-images/1.jpg",
+];
 
 
 const services = [
@@ -40,13 +45,26 @@ const Service = () => {
         offset: ["start center", "end center"], // animate between start & end
     });
 
+    const [index, setIndex] = useState(0);
+
+    // handle scroll
+    const handleScroll = (e) => {
+        if (e.deltaY > 0) {
+            // scroll down → next image
+            setIndex((prev) => (prev + 1) % images.length);
+        } else {
+            // scroll up → previous image
+            setIndex((prev) => (prev - 1 + images.length) % images.length);
+        }
+    };
+
     // Transform progress to height
     const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
     return (
-        <div>
-            <div className="flex">
+        <div className="">
+            <div className="flex flex-col lg:flex-row w-full min-h-screen">
                 <section className="w-1/2">
-                    efoiw
+
                 </section>
                 <section className="w-1/2 py-3 px-1 lg:px-5 bg-gray-50">
                     <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">
@@ -106,7 +124,7 @@ const Service = () => {
                 </section>
             </div>
 
-            <div className="min-h-screen px-6 py-12 bg-gradient-to-br from-yellow-50 via-white to-rose-100 text-gray-800">
+            <div className="min-h-screen px-6 py-12 bg-gradient-to-br from-yellow-700 via-white to-rose-900 text-gray-800">
                 <h1 className="text-4xl font-bold text-center mb-12">What we have to offer</h1>
                 <div data-aos="fade-up">
                     <h4 className='text-2xl font-semibold'>Complimentary Amenities</h4>

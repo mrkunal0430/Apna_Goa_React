@@ -36,7 +36,7 @@ const About = () => {
     return (
         <div >
 
-            <div className="h-[calc(100vh-64px)]">
+            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)]">
                 <img
                     className="w-full h-full object-cover"
                     src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80"
@@ -133,7 +133,9 @@ const About = () => {
                 </div>
             </section>
 
-            <section className="py-16 px-6 lg:px-20 bg-gradient-to-b from-gray-50 to-white">
+            <section className="relative py-16 px-6 lg:px-20  bg-gradient-to-tr from-orange-200 via-rose-200 to-yellow-200
+">
+
                 <div className="max-w-6xl mx-auto text-center">
                     <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-12">
                         What Makes Us <span className="text-emerald-500">Different</span>
@@ -162,7 +164,7 @@ const About = () => {
                 </div>
             </section>
 
-            <div className="bg-gradient-to-br from-pink-50 via-blue-50 to-purple-50 text-gray-800 px-6 py-12" >
+            <div className="bg-gradient-to-tr from-orange-50 via-rose-50 to-yellow-50 text-gray-800 px-6 py-12" >
                 <div className="max-w-6xl mx-auto">
                     {/* Heading */}
                     <h1
@@ -232,7 +234,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="travel-map p-6">
+            <div className="travel-map p-6 bg-gradient-to-tr from-orange-50 via-rose-50 to-yellow-50">
                 <h3 className="text-2xl font-bold text-center mb-4 text-gray-800">
                     South Goa at a Glance
                 </h3>

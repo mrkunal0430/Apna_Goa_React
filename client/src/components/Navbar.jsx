@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const navLinks = [
     { name: "Home", path: "/" },
@@ -17,13 +19,16 @@ const Navbar = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <header className="bg-gradient-to-r from-orange-400 to-pink-300 shadow-md sticky top-0 z-50">
+        <header className="bg-gradient-to-r from-pink-300 via-rose-200 to-orange-200 shadow-md sticky top-0 z-50">
+            <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
-            {/* Another Colour Combination for navbar ->  bg-gradient-to-r from-pink-300 via-orange-200 to-yellow-200 */}
-
-            <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-                <Link to="/" className="text-2xl font-bold text-indigo-600">
-                    ApnaGoa<span className="text-gray-800">Stays</span>
+                {/* Logo */}
+                <Link to="/" className="flex items-center gap-2">
+                    <img
+                        src="/Logo/logo_apnagoa1.jpg"
+                        alt="ApnaGoa Stays Logo"
+                        className="h-10 w-auto rounded-md"
+                    />
                 </Link>
 
                 {/* Desktop Menu */}
@@ -32,7 +37,7 @@ const Navbar = () => {
                         <div key={link.path} className="relative">
                             <Link
                                 to={link.path}
-                                className={`text-lg font-medium ${location.pathname === link.path
+                                className={`text-lg font-medium transition-colors duration-300 ${location.pathname === link.path
                                     ? "text-indigo-600"
                                     : "text-gray-700 hover:text-indigo-500"
                                     }`}
@@ -49,22 +54,37 @@ const Navbar = () => {
                     ))}
                 </nav>
 
-                <button  ></button>
+                {/* WhatsApp Contact Button (desktop only) */}
+                <div className="hidden md:block">
+                    <a
+                        href="https://wa.me/919876543210" // <- replace with your number
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-green-500 px-4 py-2 rounded-lg text-white font-medium shadow-md hover:bg-green-600 transition-colors duration-300"
+                    >
+                        <FaWhatsapp size={20} />
+                        WhatsApp
+                    </a>
+                </div>
 
                 {/* Mobile Menu Button */}
-                <button className="md:hidden text-gray-800" onClick={toggleMenu}>
+                <button
+                    className="md:hidden text-gray-800"
+                    aria-label="Toggle menu"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
                     {menuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <div className="md:hidden px-4 pb-4">
+                <div className="md:hidden px-4 pb-4 space-y-2 bg-white shadow-md rounded-b-lg">
                     {navLinks.map((link) => (
                         <Link
                             key={link.path}
                             to={link.path}
-                            className={`block py-2 text-lg font-medium ${location.pathname === link.path
+                            className={`block py-2 text-lg font-medium transition-colors duration-300 ${location.pathname === link.path
                                 ? "text-indigo-600"
                                 : "text-gray-700 hover:text-indigo-500"
                                 }`}
@@ -73,6 +93,17 @@ const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
+
+                    {/* WhatsApp Button (mobile) */}
+                    <a
+                        href="https://wa.me/919876543210" // <- replace with your number
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 bg-green-500 px-4 py-2 rounded-lg text-white font-medium shadow-md hover:bg-green-600 transition-colors duration-300"
+                    >
+                        <FaWhatsapp size={20} />
+                        WhatsApp
+                    </a>
                 </div>
             )}
         </header>
