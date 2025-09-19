@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Beaches & Relaxation",
+        "descriptiom1": "Morning: Breakfast at a local café in Colva",
+        "description2": "Late Morning: Beach hopping - visit Benaulim and Colva beaches",
+        "description3": "Afternoon: Lunch at a beach shack followed by water sports",
+        "description4": "Evening: Sunset at Palolem Beach",
+        "description5": "Night: Seafood dinner at Martin's Corner"
+    },
+    {
+        "id": 1,
+        "title": "Culture & Heritage",
+        "descriptiom1": "Morning: Visit Shantadurga Temple and Mangueshi Temple",
+        "description2": "Late Morning: Explore Old Goa churches",
+        "description3": "Afternoon: Lunch at a traditional Goan restaurant",
+        "description4": "Evening: Tour of Portuguese heritage homes in Chandor",
+        "description5": "Night: Cultural show with dinner"
+    },
+    {
+        "id": 1,
+        "title": "Nature & Adventure",
+        "descriptiom1": "Early Morning: Dolphin watching tour",
+        "description2": "Late Morning: Visit to a spice plantation with lunch",
+        "description3": "Afternoon: Explore Cotigao Wildlife Sanctuary",
+        "description4": "Evening: Sunset river cruise on the Sal River",
+        "description5": "Night: Farewell dinner at Fisherman's Wharf"
+    }
+]

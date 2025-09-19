@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Traditional Music and Dance",
+        "description": "Experience the vibrant cultural performances of Goa including Dekni, Fugdi, and Mando dances. Local cultural centers offer regular performances of traditional music played on instruments like ghumot and mridangam, accompanied by storytelling.",
+        "location": "Ravindra Bhavan (Margao), Cultural Centers",
+        "time": "Shows typically start at 6:30 PM (check local listings)",
+        "price": "₹200 - ₹500 per person (depends on the venue)",
+        "image": "https://images.pexels.com/photos/1751731/pexels-photo-1751731.jpeg",
+        "map": "https://www.google.com/search?q=traditional+goan+dance+performances",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Portuguese Heritage Homes",
+        "description": "Explore the magnificent colonial mansions that showcase a blend of Indian and Portuguese architectural styles. These heritage homes with their colorful facades, ornate balconies, and intricate tilework tell the story of Goa's colonial past.",
+        "location": "Chandor, Loutolim, Quepem",
+        "time": "9:00 AM - 5:00 PM",
+        "price": "₹100 - ₹300 per person (guided tours available)",
+        "image": "https://images.pexels.com/photos/2574631/pexels-photo-2574631.jpeg",
+        "map": "https://www.google.com/search?q=portuguese+heritage+homes+south+goa",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Goan Feni Tasting",
+        "description": "Sample Goa's traditional liquor made from cashew or coconut. Learn about the ancient distillation process and the cultural significance of this spirit that has received Geographical Indication status. Tastings often include varieties of feni with different aging and flavor profiles.",
+        "location": "Cazulo Premium Feni, selected distilleries in South Goa",
+        "time": "11:00 AM - 8:00 PM",
+        "price": "₹500 - ₹1,500 per person (with food pairings)",
+        "image": "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+        "map": "https://www.google.com/search?q=goan+cooking+classes+south+goa",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Churches and Temples Tour",
+        "description": "Discover Goa's religious diversity by visiting its historic churches, Hindu temples, and Muslim mosques. Guided tours explain the architectural styles, religious traditions, and historical significance of these sacred places.",
+        "location": "Se Cathedral, Shantadurga Temple, Safa Masjid",
+        "time": "9:00 AM - 5:00 PM",
+        "price": "Most sites are free; Guided tours: ₹1,000 - ₹2,500",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Basilica_of_bom_jesus_-_Front_View.jpg/1200px-Basilica_of_bom_jesus_-_Front_View.jpg",
+        "map": "https://www.google.com/search?q=religious+sites+tour+south+goa",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 5,
+        "title": "Local Craft Workshops",
+        "description": "Participate in workshops to learn traditional Goan crafts like shell work, pottery, and coconut craft. These sessions provide insight into ancient techniques and offer a chance to create your own souvenirs under expert guidance.",
+        "location": "Loutolim, Cuncolim",
+        "time": "2-3 hours",
+        "price": "₹500 - ₹1,200 per person (includes materials)",
+        "image": "https://images.pexels.com/photos/848205/pexels-photo-848205.jpeg",
+        "map": "https://www.google.com/search?q=craft+workshops+south+goa",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 6,
+        "title": "Goan Cooking Classes",
+        "description": "Learn to prepare authentic Goan dishes like vindaloo, xacuti, and bebinca from local chefs. These hands-on classes often include a market visit to source fresh ingredients, followed by preparation and communal dining.",
+        "location": "Benaulim, Margao, Cavelossim",
+        "time": "10:00 AM - 2:00 PM (Class duration: 3-4 hours)",
+        "price": "₹1,500 - ₹2,500 per person (includes ingredients and meal)",
+        "image": "https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg",
+        "map": "https://www.google.com/search?q=feni+tasting+experience+goa",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "time": "FaClock",
+            "price": "FaRupeeSign"
+        }
+    }
+]

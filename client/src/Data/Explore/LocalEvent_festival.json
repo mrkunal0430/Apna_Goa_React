@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "title": "Shigmo Festival",
+        "description": "Goa's prominent spring festival celebrating the arrival of spring with vibrant parades, folk dances, and colorful processions. Traditional folk dances like Ghode Modni and Fugdi are performed during street processions.",
+        "location": "Various locations in South Goa (Margao, Ponda, Quepem)",
+        "date": "March/April (Dates vary based on Hindu calendar)",
+        "price": "Free to attend public events; Special shows: ₹100-500",
+        "image": "https://i2.wp.com/www.zingbus.com/blog/wp-content/uploads/2023/03/shigmo-festival.jpg",
+        "map": "https://www.google.com/search?q=shigmo+festival+goa",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "date": "FaRegCalendarAlt ",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Goa Carnival",
+        "description": "A grand celebration with parades, music, dance, and colorful floats showcasing Goa's Portuguese heritage. King Momo leads the festival, declaring several days of music, dance, and merry-making.",
+        "location": "Margao, Vasco, and other South Goa towns",
+        "date": "February (3-4 days before Ash Wednesday)",
+        "price": "Free to attend parades; Food and craft stalls available",
+        "image": "https://www.stayvista.com/blog/wp-content/uploads/2025/02/ugur-arpaci-U18V0ToioFU-unsplash-scaled.jpg",
+        "map": "https://www.google.com/search?q=goa+carnival+festival",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "date": "FaRegCalendarAlt",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Sao Joao Festival",
+        "description": "A monsoon festival where young men jump into wells and waterbodies to retrieve gifts. Celebrated with floral crowns, boat races, and traditional Konkani songs honoring St. John the Baptist.",
+        "location": "Siolim, Anjuna, Assagao, and coastal villages",
+        "date": "June 24th (annually)",
+        "price": "Free community events; Boat festival entry: ₹100",
+        "image": "https://storage.googleapis.com/goa-app-12a91.appspot.com/2024-06-14T05%3A45%3A15.146Zviva-sao-joao3.webp?GoogleAccessId=firebase-adminsdk-zeqcj%40goa-app-12a91.iam.gserviceaccount.com&Expires=16447017600&Signature=TcSWm0xhkSRqxeXz0yMldL7Xa5Tucv3jjBYwaR6gzHqe1kH%2FinmnRd2ofIB44Iwwltv8LH8eLwvlEbVSepJOBWuSSixwo79B8zdw1Q92AmSBzwCP9EIFVEVfSwNv%2Bd9qI1dWWjR1Q7gu%2BtTw6uBQ%2FnYKXeee1nUtvIBol5oNXwXchXcFBxyDWHl9g7dEdrdTURvTQtX%2FT7CfxHru5w9VA%2FDggNMEEKnHdtNPmCNR4KNF5I0Qtt1pBFykYKOHuvkW%2BmDskZpJYJI5U%2BpFk6LftA7iEOoQs%2B0QKovpcuX4YsZSx0lJ%2FpEJyBgBcDNgMVikmF0WtKlcbLG5ZCu%2F3MSxAg%3D%3D",
+        "map": "https://www.google.com/search?q=sao+joao+festival+goa",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "date": "FaRegCalendarAlt",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Feast of St. Francis Xavier",
+        "description": "A significant Christian festival celebrating Goa's patron saint with novenas, masses, and a procession. The saint's preserved body is displayed once every 10 years, but annual celebrations draw thousands of pilgrims.",
+        "location": "Basilica of Bom Jesus, Old Goa",
+        "date": "December 3rd (annually)",
+        "price": "Free to attend; Special masses and events",
+        "image": "https://www.franciscanmedia.org/wp-content/uploads/2022/11/painting-of-saint-francis-xavier.jpeg",
+        "map": "https://www.google.com/search?q=feast+of+st+francis+xavier+goa",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "date": "FaRegCalendarAlt",
+            "price": "FaRupeeSign"
+        }
+    },
+    {
+        "id": 5,
+        "title": "Bonderam Festival",
+        "description": "A commemoration of protests against Portuguese land policies, featuring flag parades, mock battles with toy weapons, and traditional music. The festivities include 'fotashes' (toy weapon) fights and colorful flag processions.",
+        "location": "Divar Island (accessible from Ribandar)",
+        "date": "Fourth Saturday of August",
+        "price": "Free entry; Ferry to island: ₹10-20",
+        "image": "https://www.acroncandolimresortgoa.com/explore-goa/local-festivals-in-goa/bonderam-festival/images/bonderam-festival.jpg",
+        "map": "https://www.google.com/search?q=bonderam+festival+goa",
+        "icons": {
+            "location": "FaMapMarkerAlt",
+            "date": "FaRegCalendarAlt",
+            "price": "FaRupeeSign"
+        }
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "images": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "High-Speed WiFi",
+        "description": "Stay connected with our high-speed internet throughout your stay, perfect for both work and entertainment.",
+        "icon": "FaWifi",
+        "image": "high-speed-wifi.jpg"
+    },
+    {
+        "images": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Swimming Pool",
+        "description": "Enjoy our private pool at the villa or the common pool available for all our guests.",
+        "icon": "FaSwimmingPool",
+        "image": "swimming-pool.jpg"
+    },
+    {
+        "images": "https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Dedicated Workspace",
+        "description": "Remote professionals can enjoy a dedicated workspace with all necessities for productive work sessions.",
+        "icon": "FaLaptop",
+        "image": "dedicated-workspace.jpg"
+    },
+    {
+        "images": "https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "AC Bedrooms",
+        "description": "All our bedrooms are equipped with air conditioning for your comfort regardless of the season.",
+        "icon": "FaSnowflake",
+        "image": "ac-bedrooms.jpg"
+    },
+    {
+        "images": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Well-Equipped Kitchen",
+        "description": "Our fully functional kitchen allows you to prepare your own meals with all necessary appliances.",
+        "icon": "FaUtensils",
+        "image": "well-equipped-kitchen.jpg"
+    },
+    {
+        "images": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "TV with OTT Apps",
+        "description": "Enjoy your favorite shows and movies with our TV setup featuring popular OTT applications.",
+        "icon": "FaTv",
+        "image": "tv-with-ott-apps.jpg"
+    },
+    {
+        "images": "https://images.unsplash.com/photo-1563920443079-783e5c786b83?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "title": "24/7 Security",
+        "description": "Our gated community has round-the-clock security personnel for your safety and peace of mind.",
+        "icon": "FaVideo",
+        "image": "24-7-security.jpg"
+    },
+    {
+        "images": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Free Parking",
+        "description": "Secure on-site parking available for all our guests at no additional cost.",
+        "icon": "FaParking",
+        "image": "free-parking.jpg"
+    }
+]

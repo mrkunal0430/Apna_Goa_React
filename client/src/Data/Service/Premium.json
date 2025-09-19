@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "images": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Destination Wedding",
+        "description": "Make your special day unforgettable with our destination wedding planning services in beautiful Goa.",
+        "image": "Destination Wedding image",
+        "icon": "FiHeart"
+    },
+    {
+        "id": 2,
+        "images": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Birthday Celebrations",
+        "description": "We arrange memorable birthday celebrations with custom decorations, catering, and entertainment.",
+        "image": "Birth Celebration image",
+        "icon": "FiGift"
+    },
+    {
+        "id": 3,
+        "images": "https://images.unsplash.com/photo-1508997449629-303059a039c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Special Events",
+        "description": "From anniversaries to corporate retreats, we can arrange and accommodate various special events.",
+        "image": "Special Event Image",
+        "icon": "FiStar"
+    },
+    {
+        "id": 4,
+        "images": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Car & Bike Rental",
+        "description": "We can arrange reliable bike and car rentals to help you explore the beauty of Goa at your own pace.",
+        "image": "Car & Bike Image",
+        "icon": "FiTruck"
+    },
+    {
+        "id": 5,
+        "images": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Laundry Services",
+        "description": "Convenient in-house chargeable laundry services available for all our guests during their stay.",
+        "image": "Loundry Service Image",
+        "icon": "FiShoppingBag"
+    },
+    {
+        "id": 6,
+        "images": "https://images.unsplash.com/photo-1582972236019-ea4af5ffe587?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "title": "Local Tours & Experiences",
+        "description": "Discover the authentic side of Goa with our curated local tours and cultural experiences.",
+        "image": "Local Tours & Experience",
+        "icon": "FiMapPin"
+    }
+]
