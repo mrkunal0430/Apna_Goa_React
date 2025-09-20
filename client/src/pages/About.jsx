@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaHome, FaSmile, FaWhatsapp, FaMapMarkedAlt, FaUserFriends, FaCrown } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Helmet } from "react-helmet-async";
+import { Helmet } from '@vuer-ai/react-helmet-async';
 
 
 const features = [

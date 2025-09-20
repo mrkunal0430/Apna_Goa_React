@@ -10,7 +10,7 @@ import React from 'react';
 import SwiperSlider from "../components/explore/SwiperSlider";
 import TravelTips_Recommendation from "../components/explore/Travel_Tips_Card";
 import ThreeDay_Day from "../components/explore/3day_iternary"
-import { Helmet } from "react-helmet-async";
+import { Helmet } from '@vuer-ai/react-helmet-async';
 
 
 const Explore = () => {

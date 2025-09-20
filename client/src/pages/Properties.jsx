@@ -1,6 +1,6 @@
 // src/pages/Property.jsx
 import { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from '@vuer-ai/react-helmet-async';
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";

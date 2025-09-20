@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Helmet } from "react-helmet-async";
+import { Helmet } from '@vuer-ai/react-helmet-async';
 import CountUp from "react-countup";
 
 
