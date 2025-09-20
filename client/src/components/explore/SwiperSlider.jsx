@@ -33,7 +33,7 @@ const SwiperSlider = ({
         <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={20}
-            slidesPerView={4}
+            slidesPerView={1}
             autoplay={{ delay: 2000, disableOnInteraction: false }}
             pagination={showPagination ? { clickable: true } : false}
             loop={slidesData.length > 4} // ✅ Auto-disable loop if not enough slides
@@ -44,7 +44,11 @@ const SwiperSlider = ({
                 768: { slidesPerView: Math.min(2, slidesData.length), spaceBetween: 30 },
                 1024: { slidesPerView: Math.min(3, slidesData.length), spaceBetween: 40 },
                 1280: { slidesPerView: Math.min(4, slidesData.length), spaceBetween: 40 },
+                640: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+                1440: { slidesPerView: 4, spaceBetween: 40 },
             }}
+
         >
 
 

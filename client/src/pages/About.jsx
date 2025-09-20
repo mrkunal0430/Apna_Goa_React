@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaHome, FaSmile, FaWhatsapp, FaMapMarkedAlt, FaUserFriends, FaCrown } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { Helmet } from "react-helmet-async";
 
 
 const features = [
@@ -35,6 +35,14 @@ const About = () => {
 
     return (
         <div >
+            <Helmet>
+                <title>About ApnaGoa - Trusted Homestays in Goa</title>
+                <meta name="description" content="Learn about ApnaGoa and our mission to provide the best homestay experience in Goa." />
+                <meta property="og:title" content="About ApnaGoa - Trusted Homestays in Goa" />
+                <meta property="og:description" content="Learn about ApnaGoa and our mission to provide the best homestay experience in Goa." />
+                <meta property="og:image" content="https://apnagoa.com/Logo/og-image.jpg" />
+                <link rel="canonical" href="https://apnagoa.com/about" />
+            </Helmet>
 
             <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)]">
                 <img
@@ -234,7 +242,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="travel-map p-6 bg-gradient-to-tr from-orange-50 via-rose-50 to-yellow-50">
+            <div className="travel-map py-6 px-12 bg-[#bbd7f3]">
                 <h3 className="text-2xl font-bold text-center mb-4 text-gray-800">
                     South Goa at a Glance
                 </h3>

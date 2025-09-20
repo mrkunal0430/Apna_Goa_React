@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaHome } from "react-icons/fa";
 
 
 const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Explore", path: "/explore" },
-    { name: "Services", path: "/services" },
+    { name: "Properties", path: "/properties" },
+    { name: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
@@ -19,16 +20,22 @@ const Navbar = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <header className="bg-gradient-to-r from-pink-300 via-rose-200 to-orange-200 shadow-md sticky top-0 z-50">
+        <header className="bg-blue-950 shadow-md sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2">
-                    <img
+                    {/* <img
                         src="/Logo/logo_apnagoa1.jpg"
                         alt="ApnaGoa Stays Logo"
                         className="h-10 w-auto rounded-md"
-                    />
+                    /> */}
+                    <div className="flex items-center gap-2 text-2xl font-bold">
+                        <FaHome className="text-orange-400" />
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500">
+                            Apna<span className='text-blue-700'>Goa</span>
+                        </span>
+                    </div>
                 </Link>
 
                 {/* Desktop Menu */}
@@ -38,8 +45,8 @@ const Navbar = () => {
                             <Link
                                 to={link.path}
                                 className={`text-lg font-medium transition-colors duration-300 ${location.pathname === link.path
-                                    ? "text-indigo-600"
-                                    : "text-gray-700 hover:text-indigo-500"
+                                    ? "text-white"
+                                    : "text-gray-300 hover:text-white"
                                     }`}
                             >
                                 {link.name}
@@ -47,7 +54,7 @@ const Navbar = () => {
                             {location.pathname === link.path && (
                                 <motion.div
                                     layoutId="underline"
-                                    className="absolute -bottom-1 left-0 h-[2px] w-full bg-indigo-600 rounded"
+                                    className="absolute -bottom-1 left-0 h-[2px] w-full bg-white rounded"
                                 />
                             )}
                         </div>

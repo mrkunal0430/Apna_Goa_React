@@ -36,7 +36,6 @@ import {
 } from "swiper/modules";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 
-
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/navigation";

@@ -10,12 +10,21 @@ import React from 'react';
 import SwiperSlider from "../components/explore/SwiperSlider";
 import TravelTips_Recommendation from "../components/explore/Travel_Tips_Card";
 import ThreeDay_Day from "../components/explore/3day_iternary"
-
+import { Helmet } from "react-helmet-async";
 
 
 const Explore = () => {
     return (
         <div className="w-full min-h-screen ">
+
+            <Helmet>
+                <title>Explore Goa with ApnaGoa</title>
+                <meta name="description" content="Discover the best attractions, beaches, and experiences in Goa with ApnaGoa." />
+                <meta property="og:title" content="Explore Goa with ApnaGoa" />
+                <meta property="og:description" content="Discover the best attractions, beaches, and experiences in Goa with ApnaGoa." />
+                <meta property="og:image" content="https://apnagoa.com/Logo/og-image.jpg" />
+                <link rel="canonical" href="https://apnagoa.com/explore" />
+            </Helmet>
 
             {/* Banner Section */}
             <div className="relative w-full h-[60vh] md:h-[90vh] overflow-hidden">
@@ -36,7 +45,7 @@ const Explore = () => {
             </div>
 
             {/* Explore Grid Section */}
-            <div className="px-4 sm:px-8 py-12 bg-gradient-to-tr from-orange-100 via-rose-100 to-yellow-100">
+            <div className="px-4 sm:px-8 py-12 bg-gradient-to-tr from-orange-100 via-white-100 to-yellow-100">
 
                 <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Explore South Goa</h2>
 
