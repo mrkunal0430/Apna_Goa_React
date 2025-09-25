@@ -1,8 +1,7 @@
-// src/pages/Apartment.jsx
-import { useState, useEffect, React } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from '@vuer-ai/react-helmet-async';
 import { motion, AnimatePresence } from "framer-motion";
-
+import VideoCard from "../components/Properties_Cards/VideoCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,6 +22,26 @@ import {
 } from "lucide-react";
 
 
+const videoCards = [
+    {
+        title: "Luxury Villas",
+        desc: "Private villas with pools & modern amenities.",
+        video: "/villa.mp4",
+        thumbnail: "/villa-thumb.jpg",
+    },
+    {
+        title: "Cozy Apartments",
+        desc: "Perfect for couples & small families in South Goa.",
+        video: "/apartment.mp4",
+        thumbnail: "/apartment-thumb.jpg",
+    },
+    {
+        title: "Goa Experiences",
+        desc: "Beaches, nightlife & authentic Goan culture.",
+        video: "/experience.mp4",
+        thumbnail: "/experience-thumb.jpg",
+    },
+];
 
 const Apartment = () => {
 
@@ -37,7 +56,7 @@ const Apartment = () => {
     }, []);
 
     return (
-        <div className="bg-[#6ea7e0] text-gray-800">
+        <div className="bg-[#cdcfe0] text-gray-800 overflow-x-hidden">
             {/* ✅ SEO */}
             <Helmet>
                 <title>Holiday Apartment in South Goa | ApnaGoa</title>
@@ -49,8 +68,8 @@ const Apartment = () => {
 
             {/* ✅ Hero */}
             <section
-                className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
-                style={{ backgroundImage: "url('/properties/apartment1.jpg')" }}
+                className="relative h-[70vh] md:h-[80vh] flex items-center justify-center bg-cover bg-center"
+                style={{ backgroundImage: "url('/2BHK_Apartment/14.webp')" }}
             >
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="relative z-10 text-center text-white px-6">
@@ -65,8 +84,8 @@ const Apartment = () => {
             </section>
 
             {/* ✅ Quick Highlights */}
-            <section className="py-20 px-6 md:px-16 bg-gray-50">
-                <div className="grid md:grid-cols-4 gap-8 text-center">
+            <section className="pb-10 pt-20 px-6 md:px-16 bg-[#cdcfe0]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
                     {[
                         { icon: <Bed size={28} />, text: "1 Spacious Bedroom" },
                         { icon: <Tv size={28} />, text: "Smart TV + Netflix" },
@@ -75,7 +94,7 @@ const Apartment = () => {
                     ].map((item, i) => (
                         <div
                             key={i}
-                            className="flex flex-col items-center gap-3 bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition"
+                            className="flex flex-col items-center gap-3 bg-white p-8 rounded-2xl shadow-md hover:shadow-blue-800 transition transform "
                             data-aos="zoom-in"
                             data-aos-delay={i * 100}
                         >
@@ -85,97 +104,94 @@ const Apartment = () => {
                     ))}
                 </div>
             </section>
-
+            <div className="mx-6 md:mx-20 bg-[#032446] w-auto h-0.5"></div>
             {/* ✅ About */}
-            <section className="py-20 px-6 md:px-16 max-w-6xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    About the Apartment
-                </h2>
-                <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto text-lg">
-                    Our apartment blends comfort and modern living. With a cozy bedroom,
-                    stylish living room, balcony views, and a kitchenette — it’s ideal for
-                    couples, small families, and digital nomads. The interiors are
-                    designed to make you feel at home while enjoying South Goa’s charm.
-                </p>
-            </section>
+            <div className="my-10 flex flex-col md:flex-row gap-10 bg-[#cdcfe0] px-6 md:px-0">
+                {/* ✅ Gallery */}
+                <div className="md:px-16 max-w-4xl mx-auto md:mb-0 w-full md:w-1/2">
+                    <Swiper
+                        navigation
+                        modules={[Navigation]}
+                        className="h-[500px] md:h-[650px] rounded-3xl shadow-lg bg-[#032446]"
+                    >
+                        {[
+                            "/2BHK_Apartment/1.webp",
+                            "/2BHK_Apartment/2.webp",
+                            "/2BHK_Apartment/3.webp",
+                            "/2BHK_Apartment/4.webp",
+                            "/2BHK_Apartment/5.webp",
+                            "/2BHK_Apartment/6.webp",
+                            "/2BHK_Apartment/7.webp",
+                            "/2BHK_Apartment/8.webp",
+                            "/2BHK_Apartment/9.webp",
+                            "/2BHK_Apartment/10.webp",
+                        ].map((img, i) => (
+                            <SwiperSlide key={i}>
+                                <img
+                                    src={img}
+                                    alt="Apartment view"
+                                    className="w-full h-full object-cover rounded-3xl text-white"
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
 
-            {/* ✅ Gallery */}
-            <section className="px-6 md:px-16 max-w-6xl mx-auto mb-24">
-                <Swiper
-                    navigation
-                    modules={[Navigation]}
-                    className="h-[450px] rounded-3xl shadow-lg"
-                >
-                    {[
-                        "/properties/apartment1.jpg",
-                        "/properties/apartment2.jpg",
-                        "/properties/apartment3.jpg",
-                    ].map((img, i) => (
-                        <SwiperSlide key={i}>
-                            <img
-                                src={img}
-                                alt="Apartment view"
-                                className="w-full h-[450px] object-cover rounded-3xl"
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </section>
-
-            {/* ✅ Room Breakdown */}
-            <section className="py-20 px-6 md:px-16 bg-gray-50">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                    Inside the Apartment
-                </h2>
-                <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                    {[
-                        {
-                            title: "Bedroom",
-                            desc: "A cozy queen-size bed, fresh linens, wardrobe, and balcony access.",
-                            img: "/properties/bedroom.jpg",
-                        },
-                        {
-                            title: "Living Room",
-                            desc: "Bright space with a sofa, smart TV, and modern decor.",
-                            img: "/properties/livingroom.jpg",
-                        },
-                        {
-                            title: "Kitchenette",
-                            desc: "Equipped with stove, fridge, microwave, and dining essentials.",
-                            img: "/properties/kitchen.jpg",
-                        },
-                        {
-                            title: "Balcony",
-                            desc: "Relax with coffee and enjoy stunning greenery views.",
-                            img: "/properties/balcony.jpg",
-                        },
-                    ].map((room, i) => (
-                        <div
-                            key={i}
-                            className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden"
-                            data-aos="fade-up"
-                            data-aos-delay={i * 150}
-                        >
-                            <img
-                                src={room.img}
-                                alt={room.title}
-                                className="w-full h-56 object-cover"
-                            />
-                            <div className="p-6">
-                                <h3 className="font-semibold text-xl mb-3">{room.title}</h3>
-                                <p className="text-gray-600">{room.desc}</p>
-                            </div>
+                {/* ✅ Text */}
+                <div className="flex flex-col justify-center pt-6 md:pt-20  px-6 md:px-16 max-w-6xl mx-auto text-center md:text-left md:w-1/2">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+                        Your Private Goan Retreat
+                    </h2>
+                    <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto md:mx-0 text-base md:text-lg mb-6">
+                        Discover your personal oasis in South Goa. Our apartment is more than just a place to stay—it's a thoughtfully designed experience blending modern amenities with the tranquil charm of Palolem. The space is flooded with natural light, offering a warm and inviting atmosphere from the moment you arrive.
+                    </p>
+                    <div className="space-y-4 text-left max-w-md mx-auto md:mx-0">
+                        <div className="flex items-start gap-3">
+                            <CheckCircle className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                            <p className="text-gray-700"><strong>Work & Stay:</strong> High-speed Wi-Fi and a comfortable workspace perfect for digital nomads.</p>
                         </div>
+                        <div className="flex items-start gap-3">
+                            <CheckCircle className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                            <p className="text-gray-700"><strong>Relax & Unwind:</strong> A serene private balcony overlooking lush greenery—your perfect coffee spot.</p>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <CheckCircle className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                            <p className="text-gray-700"><strong>Home Comforts:</strong> A well-equipped kitchenette to prepare your favorite meals.</p>
+                        </div>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto md:mx-0 text-base md:text-lg mt-6">
+                        Ideal for a romantic couple's retreat, a comfortable base for small families, or an inspiring creative sanctuary.
+                    </p>
+                </div>
+            </div>
+
+            <div className="mx-6 md:mx-20 bg-[#032446] w-auto h-0.5"></div>
+            {/* ✅ Room Breakdown */}
+            <div className="w-full bg-gradient-to-b from-white via-gray-50 to-gray-100 py-12 px-6">
+                {/* Heading */}
+                <div className="text-center mb-10">
+                    <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
+                        Explore <span className="text-emerald-600">ApnaGoa</span>
+                    </h1>
+                    <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                        Discover our villas, apartments, and experiences through short video highlights.
+                    </p>
+                </div>
+
+                {/* Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                    {videoCards.map((card, index) => (
+                        <VideoCard key={index} {...card} />
                     ))}
                 </div>
-            </section>
-
+            </div>
+            <div className="mx-6 md:mx-20 bg-[#032446] w-auto h-0.5"></div>
             {/* ✅ Amenities */}
-            <section className="py-20 px-6 md:px-16">
+            <section className="pt-20 pb-10 px-6 md:px-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                     Amenities
                 </h2>
-                <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     {[
                         { icon: <Wind size={24} />, label: "Air Conditioning" },
                         { icon: <Wifi size={24} />, label: "High-Speed Wi-Fi" },
@@ -196,13 +212,13 @@ const Apartment = () => {
                     ))}
                 </div>
             </section>
-
+            <div className="mx-6 md:mx-20 bg-blue-500 w-auto h-0.5"></div>
             {/* ✅ Nearby Attractions */}
-            <section className="py-20 px-6 md:px-16 bg-gray-50">
+            <section className="pt-20 pb-10 px-6 md:px-16 bg-[#cdcfe0]">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                     Nearby Attractions
                 </h2>
-                <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
                     {[
                         {
                             title: "Palolem Beach",
@@ -239,9 +255,9 @@ const Apartment = () => {
                     ))}
                 </div>
             </section>
-
+            <div className="mx-6 md:mx-20 bg-blue-700 w-auto h-0.5"></div>
             {/* ✅ Policies */}
-            <section className="py-20 px-6 md:px-16">
+            <section className="pt-20 pb-10 px-6 md:px-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
                     Stay Policies
                 </h2>
@@ -268,9 +284,9 @@ const Apartment = () => {
                     ))}
                 </div>
             </section>
-
+            <div className="mx-6 md:mx-20 bg-[#032446] w-auto h-0.5"></div>
             {/* Faq section */}
-            <section className="py-20 px-6 md:px-16">
+            <section className="pt-20 pb-10 px-6 md:px-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
                     Frequently Asked Questions
                 </h2>
@@ -324,9 +340,9 @@ const Apartment = () => {
                     ))}
                 </div>
             </section>
-
+            <div className="mx-6 md:mx-20 bg-[#032446] w-auto h-0.5"></div>
             {/* ✅ Final CTA */}
-            <section className="bg-gradient-to-r from-green-600 to-emerald-500 py-24 text-center text-white">
+            <section className="bg-[#cdcfe0] border-4 rounded-2xl border-sky-800 pt-20 pb-24 text-center text-gray-800 px-6">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                     Book Your Apartment Stay in South Goa
                 </h2>

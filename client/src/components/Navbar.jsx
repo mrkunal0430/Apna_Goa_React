@@ -76,7 +76,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-gray-800"
+                    className="md:hidden text-white focus:outline-none"
                     aria-label="Toggle menu"
                     onClick={() => setMenuOpen(!menuOpen)}
                 >

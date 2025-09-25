@@ -1,24 +1,52 @@
 // src/pages/Home.jsx
 import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import TestimonialCard from '../components/Home/TestimonialCard';
 import PropertyShowcase from '../components/Home/Gallery/PropertyShowcase'
 import { FaStar } from "react-icons/fa";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import "swiper/css/effect-fade";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet } from '@vuer-ai/react-helmet-async';
 import CountUp from "react-countup";
+import { motion } from "framer-motion";
 
+const categories = [
+    {
+        title: "Luxury Villas",
+        desc: "Spacious private villas with pools & modern amenities.",
+        img: "/Villa.webp",
+        link: "properties/villa",
+    },
+    {
+        title: "Cozy Apartments",
+        desc: "Perfect stays for couples & small families in South Goa.",
+        img: "/2BHK_Apartment/14.webp",
+        link: "properties/apartment",
+    },
+    {
+        title: "Experiences",
+        desc: "Curated Goa experiences: beaches, culture & nightlife.",
+        img: "/experience.jpg",
+        link: "/experiences",
+    },
+    {
+        title: "Food & Drinks",
+        desc: "Enjoy authentic Goan cuisine & beachside cafes.",
+        img: "/food.jpg",
+        link: "/food",
+    },
+];
 
 const images = [
-    { src: '/Villa/bg.jpg', alt: 'Luxury Villa near Varca Beach' },
-    { src: '/Home-Swap-images/2.jpg', alt: 'Cozy Apartment near Colva' },
-    { src: '/Home-Swap-images/3.jpg', alt: 'Peaceful Evening in South Goa' },
-    { src: '/Home-Swap-images/4.jpg', alt: 'Palm Tree View in South Goa' },
-    { src: '/Home-Swap-images/5.jpg', alt: 'Sunset View near the Beach' },
+    { src: '/Villa/bg.webp', alt: 'Luxury Villa near Varca Beach' },
+    { src: '/Villa/15.webp', alt: 'Cozy Apartment near Colva' },
+    { src: '/2BHK_Apartment/14.webp', alt: 'Peaceful Evening in South Goa' },
+    { src: '/Villa/19.webp', alt: 'Palm Tree View in South Goa' },
+    { src: '/Villa/15.webp', alt: 'Sunset View near the Beach' },
 ];
 
 const Home = () => {
@@ -46,26 +74,72 @@ const Home = () => {
             </Helmet>
 
             {/* Hero Slider Section */}
-            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)]">
-                <Swiper
-                    modules={[Autoplay, Pagination]}
-                    autoplay={{ delay: 3000, disableOnInteraction: false }}
-                    pagination={{ clickable: true }}
-                    loop={true}
-                    className="w-full h-full"
-                >
-                    {images.map((img, index) => (
-                        <SwiperSlide key={index} className="w-full h-full relative">
-                            <img
-                                src={img.src || "/fallback.jpg"}
-                                alt={img.alt || "ApnaGoa Stay"}
-                                className="w-full h-full object-cover object-center"
-                                loading="lazy"
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+            <div className="relative w-full h-[calc(100vh-64px)] overflow-hidden">
+                {/* Background Parallax Image */}
+                <div
+                    className="absolute inset-0 bg-[url('/Villa.webp')] bg-cover bg-center bg-fixed"
+                ></div>
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/40"></div>
+
+                {/* Content */}
+                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4">
+                    <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
+                        Discover <span className="text-emerald-400">South Goa</span>
+                    </h1>
+                    <p className="mt-4 text-lg md:text-xl text-gray-200 max-w-2xl">
+                        Handpicked Villas & Apartments for your perfect holiday escape
+                    </p>
+                    <div className="mt-6 flex gap-4">
+                        <button className="px-6 py-3 bg-emerald-500 text-white font-semibold rounded-full shadow hover:bg-emerald-600 transition">
+                            Explore Stays
+                        </button>
+                        <button className="px-6 py-3 border border-white text-white font-semibold rounded-full hover:bg-white/10 transition">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
             </div>
+
+            <div className="relative w-full min-h-[calc(100vh-64px)] flex flex-col items-center justify-center bg-gradient-to-b from-white via-gray-50 to-gray-100 py-12 px-6">
+                {/* Heading */}
+                <div className="text-center mb-10">
+                    <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
+                        Welcome to <span className="text-emerald-600">ApnaGoa</span>
+                    </h1>
+                    <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                        Choose your perfect stay or experience in the heart of South Goa.
+                    </p>
+                </div>
+
+                {/* Cards Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
+                    {categories.map((cat, index) => (
+                        <motion.a
+                            key={index}
+                            href={cat.link}
+                            whileHover={{ scale: 1.05 }}
+                            className="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer"
+                        >
+                            {/* Image */}
+                            <img
+                                src={cat.img}
+                                alt={cat.title}
+                                className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+                            />
+                            {/* Overlay */}
+                            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition"></div>
+                            {/* Text */}
+                            <div className="absolute bottom-4 left-4 right-4 text-white">
+                                <h2 className="text-2xl font-bold">{cat.title}</h2>
+                                <p className="text-sm text-gray-200 mt-1">{cat.desc}</p>
+                            </div>
+                        </motion.a>
+                    ))}
+                </div>
+            </div>
+
 
             {/* Testimonial Section */}
             <div className="py-5 bg-[#bbd7f3]">
@@ -159,3 +233,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
+

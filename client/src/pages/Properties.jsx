@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import PropertyCard from "../components/Properties_Cards/PropertyCard";
 
 import Complimentary from '../Data/Service/Complimentary.json';
 import Premium from '../Data/Service/Premium.json';
@@ -30,21 +31,31 @@ const Property = () => {
                 />
             </Helmet>
 
-            {/* Hero */}
-            <section className="relative w-full h-[60vh] md:h-[90vh] overflow-hidden bg-[#739EC9]">
-                <img src="/ApnaGoa_Beach.webp" alt="ApnaGoa Homestays" className="w-full h-84 object-cover" />
-                <div className="absolute max-w-4xl mx-auto px-6">
-                    <h1 className="text-5xl font-extrabold mb-6">Our Properties</h1>
-                    <p className="text-lg opacity-90">
+
+            <div className="relative h-[40vh] md:h-screen overflow-y-auto">
+                <div
+                    className=" absolute inset-0 bg-[url('/Property_Hero.webp')] bg-cover bg-center bg-fixed"
+                ></div>
+                <div className="absolute inset-0 bg-black/40"></div>
+            </div>
+
+            <section className=" overflow-hidden bg-[#739EC9] relative" data-aos="fade-up">
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    className="max-w-4xl mx-auto mt-10 text-center">
+                    <h1 className="text-5xl font-extrabold mb-6 text-black">Our Properties</h1>
+                    <p className="text-lg opacity-90 text-white">
                         Discover the charm of South Goa with our handpicked collection of
                         Apartments and Villas. Comfort, luxury, and breathtaking
                         surroundings await you.
                     </p>
-                </div>
+                </motion.div>
             </section>
 
-            {/* Why Choose Us */}
-            <section className="py-16 px-6 md:px-16 lg:px-24 bg-[#739EC9]">
+            {/* ------------------ Why Choose Us ------------------ */}
+            <section className="py-6 px-6 md:px-16 lg:px-24 bg-[#739EC9]">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -52,17 +63,23 @@ const Property = () => {
                     className="max-w-5xl mx-auto text-center"
                 >
                     <h2 className="text-3xl font-bold mb-6">Why Stay With Us?</h2>
-                    <p className="text-gray-600 leading-relaxed">
-                        Our properties are designed to match every traveler’s needs —
-                        whether it’s a quiet family retreat, a romantic getaway, or a fun
-                        trip with friends. Expect modern interiors, private spaces, and
-                        access to South Goa’s most serene beaches.
+                    <p className="text-white leading-relaxed">
+                        Our properties are designed to match every traveler’s needs — whether it’s a quiet family retreat, a romantic getaway, or a fun trip with friends. Expect modern interiors, private spaces, and access to South Goa’s most serene beaches.
                     </p>
                 </motion.div>
             </section>
 
-            {/* Property Cards */}
-            <section className="py-20 px-6 md:px-16 lg:px-24 bg-[#739EC9]">
+            <div className="relative w-full h-30  md:h-96 overflow-hidden  shadow-lg group">
+                {/* Background Image */}
+                <img
+                    src="/ApnaGoa_Beach.webp"
+                    alt="Scenic view of South Goa"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+            </div>
+
+            {/* ------------------ Property Cards ------------------ */}
+            <section className="py-6 px-6 md:px-16 lg:px-24 bg-[#739EC9]">
                 <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
                     {/* Apartments */}
                     <motion.div
@@ -73,7 +90,7 @@ const Property = () => {
                     >
                         <div className="relative">
                             <img
-                                src="/images/apartment.jpg"
+                                src="2BHK_Apartment/15.webp"
                                 alt="Apartments in Goa"
                                 className="w-full h-72 object-cover"
                             />
@@ -84,10 +101,7 @@ const Property = () => {
                         </div>
                         <div className="p-6">
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Modern and fully furnished, our apartments are perfect for small
-                                groups or families. With private kitchens, cozy living rooms,
-                                and balconies overlooking South Goa’s landscapes, they bring
-                                comfort and convenience together.
+                                Modern and fully furnished, our apartments are perfect for small groups or families. With private kitchens, cozy living rooms, and balconies overlooking South Goa’s landscapes, they bring comfort and convenience together.
                             </p>
                             <Link
                                 to="/properties/apartment"
@@ -108,7 +122,7 @@ const Property = () => {
                     >
                         <div className="relative">
                             <img
-                                src="/images/villa.jpg"
+                                src="/Villa.webp"
                                 alt="Villas in Goa"
                                 className="w-full h-72 object-cover"
                             />
@@ -119,10 +133,7 @@ const Property = () => {
                         </div>
                         <div className="p-6">
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Perfect for larger groups, our villas offer private pools, lush
-                                gardens, and luxurious interiors. Whether it’s a family reunion
-                                or a special celebration, our villas create memories that last a
-                                lifetime.
+                                Perfect for larger groups, our villas offer private pools, lush gardens, and luxurious interiors. Whether it’s a family reunion or a special celebration, our villas create memories that last a lifetime.
                             </p>
                             <Link
                                 to="/properties/villa"
@@ -135,26 +146,30 @@ const Property = () => {
                 </div>
             </section>
 
-            <div className="min-h-screen px-6 py-12 bg-[#739EC9]">
-                <h1 className="text-4xl font-bold text-center mb-12">What we have to offer</h1>
-                <div data-aos="fade-up">
-                    <h4 className='text-2xl font-semibold'>Complimentary Amenities</h4>
-                    <div className='mt-5 relative'> <SwiperSlider slidesData={Complimentary} type='services' ></SwiperSlider></div>
-                </div>
-                <div data-aos="fade-up">
-                    <h4 className='text-2xl font-semibold'>Premium Services</h4>
-                    <div className='mt-5 relative'> <SwiperSlider slidesData={Premium} type='services' ></SwiperSlider></div>
-                </div>
-            </div>
+            <section className="py-12 px-6 md:px-16 lg:px-24 bg-[#739EC9]">
+                <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
+                    <PropertyCard
+                        image="/2BHK_Apartment/15.webp"
+                        title="Stylish Apartments"
+                        description="Modern and fully furnished, our apartments are perfect for small groups or families. With private kitchens, cozy living rooms, and balconies overlooking South Goa’s landscapes, they bring comfort and convenience together."
+                        link="/properties/apartment"
+                    />
 
-            {/* CTA */}
-            <section className="bg-[#739EC9] text-white py-16 text-center">
+                    <PropertyCard
+                        image="/Villa.webp"
+                        title="Luxury Villas"
+                        description="Perfect for larger groups, our villas offer private pools, lush gardens, and luxurious interiors. Whether it’s a family reunion or a special celebration, our villas create memories that last a lifetime."
+                        link="/properties/villa"
+                    />
+                </div>
+            </section>
+
+            {/* ------------------ CTA ------------------ */}
+            <section className="bg-[#739EC9] text-white pb-10 text-center">
                 <div className="max-w-3xl mx-auto px-6">
                     <h2 className="text-3xl font-bold mb-4">Plan Your Perfect Stay</h2>
                     <p className="mb-6 opacity-90">
-                        Choose from our collection of apartments and villas to make your
-                        Goa vacation unforgettable. Comfort, style, and great locations
-                        await you.
+                        Choose from our collection of apartments and villas to make your Goa vacation unforgettable. Comfort, style, and great locations await you.
                     </p>
                     <Link
                         to="/contact"
@@ -164,7 +179,7 @@ const Property = () => {
                     </Link>
                 </div>
             </section>
-        </div>
+        </div >
     );
 };
 

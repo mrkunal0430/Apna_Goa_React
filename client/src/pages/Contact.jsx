@@ -77,7 +77,7 @@ const Contact = () => {
 
                             </div>
                         </div>
-                        <div className="absolute top-0 right-4 ">
+                        <div className="absolute top-0 right-1 sm:right-1 md:right-5">
                             <div className="space-y-2 text-black">
                                 <p>📩 apnagoa@gmail.com</p>
                                 <p>📞 +91 12345 67890</p>
