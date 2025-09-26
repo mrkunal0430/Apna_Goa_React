@@ -7,9 +7,7 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import PropertyCard from "../components/Properties_Cards/PropertyCard";
 
-import Complimentary from '../Data/Service/Complimentary.json';
-import Premium from '../Data/Service/Premium.json';
-import SwiperSlider from '../components/explore/SwiperSlider';
+
 
 const Property = () => {
     useEffect(() => {
@@ -90,7 +88,7 @@ const Property = () => {
                     >
                         <div className="relative">
                             <img
-                                src="2BHK_Apartment/15.webp"
+                                src="Properties/Apartment/14.webp"
                                 alt="Apartments in Goa"
                                 className="w-full h-72 object-cover"
                             />
@@ -149,7 +147,7 @@ const Property = () => {
             <section className="py-12 px-6 md:px-16 lg:px-24 bg-[#739EC9]">
                 <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
                     <PropertyCard
-                        image="/2BHK_Apartment/15.webp"
+                        image="/Properties/Apartment/11.webp"
                         title="Stylish Apartments"
                         description="Modern and fully furnished, our apartments are perfect for small groups or families. With private kitchens, cozy living rooms, and balconies overlooking South Goa’s landscapes, they bring comfort and convenience together."
                         link="/properties/apartment"

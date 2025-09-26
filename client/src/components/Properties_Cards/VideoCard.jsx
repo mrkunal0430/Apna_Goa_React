@@ -23,7 +23,7 @@ function VideoCard({ title, desc, video, thumbnail }) {
     return (
         <motion.div
             whileHover={{ scale: 1.02 }}
-            className="relative rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
+            className=" relative inset-0 h-[580px] rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             onClick={() => {
@@ -40,7 +40,7 @@ function VideoCard({ title, desc, video, thumbnail }) {
             <img
                 src={thumbnail}
                 alt={title}
-                className={`absolute inset-0 w-full h-64 object-cover transition-opacity duration-500 ${playing ? "opacity-0" : "opacity-100"
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${playing ? "opacity-0" : "opacity-100"
                     }`}
                 loading="lazy"
             />
@@ -53,7 +53,7 @@ function VideoCard({ title, desc, video, thumbnail }) {
                 playsInline
                 loop
                 preload="none"
-                className="w-full h-64 object-cover"
+                className="w-full h-full object-cover"
             />
 
             {/* Overlay Gradient */}

@@ -26,20 +26,21 @@ const videoCards = [
     {
         title: "Luxury Villas",
         desc: "Private villas with pools & modern amenities.",
-        video: "/villa.mp4",
-        thumbnail: "/villa-thumb.jpg",
+        video: "/Properties/Apartment/1.mp4",
+        thumbnail: "/Properties/Apartment/1.webp",
     },
     {
         title: "Cozy Apartments",
         desc: "Perfect for couples & small families in South Goa.",
-        video: "/apartment.mp4",
-        thumbnail: "/apartment-thumb.jpg",
+        video: "/Properties/Apartment/2.mp4",
+        thumbnail: "/Properties/Apartment/11.webp",
     },
+
     {
         title: "Goa Experiences",
         desc: "Beaches, nightlife & authentic Goan culture.",
-        video: "/experience.mp4",
-        thumbnail: "/experience-thumb.jpg",
+        video: "/Properties/Apartment/3.mp4",
+        thumbnail: "/Properties/Apartment/17.webp",
     },
 ];
 
@@ -69,7 +70,7 @@ const Apartment = () => {
             {/* ✅ Hero */}
             <section
                 className="relative h-[70vh] md:h-[80vh] flex items-center justify-center bg-cover bg-center"
-                style={{ backgroundImage: "url('/2BHK_Apartment/14.webp')" }}
+                style={{ backgroundImage: "url('/Properties/Apartment/14.webp')" }}
             >
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="relative z-10 text-center text-white px-6">
@@ -115,16 +116,16 @@ const Apartment = () => {
                         className="h-[500px] md:h-[650px] rounded-3xl shadow-lg bg-[#032446]"
                     >
                         {[
-                            "/2BHK_Apartment/1.webp",
-                            "/2BHK_Apartment/2.webp",
-                            "/2BHK_Apartment/3.webp",
-                            "/2BHK_Apartment/4.webp",
-                            "/2BHK_Apartment/5.webp",
-                            "/2BHK_Apartment/6.webp",
-                            "/2BHK_Apartment/7.webp",
-                            "/2BHK_Apartment/8.webp",
-                            "/2BHK_Apartment/9.webp",
-                            "/2BHK_Apartment/10.webp",
+                            "/Properties/Apartment/1.webp",
+                            "/Properties/Apartment/2.webp",
+                            "/Properties/Apartment/3.webp",
+                            "/Properties/Apartment/4.webp",
+                            "/Properties/Apartment/5.webp",
+                            "/Properties/Apartment/6.webp",
+                            "/Properties/Apartment/7.webp",
+                            "/Properties/Apartment/8.webp",
+                            "/Properties/Apartment/9.webp",
+                            "/Properties/Apartment/10.webp",
                         ].map((img, i) => (
                             <SwiperSlide key={i}>
                                 <img
@@ -179,7 +180,7 @@ const Apartment = () => {
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  max-w-7xl mx-auto">
                     {videoCards.map((card, index) => (
                         <VideoCard key={index} {...card} />
                     ))}
@@ -223,17 +224,17 @@ const Apartment = () => {
                         {
                             title: "Palolem Beach",
                             desc: "Golden sands and calm waters just 5 mins away.",
-                            img: "/attractions/palolem.jpg",
+                            img: "/Properties/Famous_Places/Palolem.webp",
                         },
                         {
                             title: "Agonda Beach",
                             desc: "A quieter, scenic beach 20 mins drive.",
-                            img: "/attractions/agonda.jpg",
+                            img: "/Properties/Famous_Places/AgondaBeach.webp",
                         },
                         {
                             title: "Local Market",
                             desc: "Shops, cafes, and vibrant nightlife nearby.",
-                            img: "/attractions/market.jpg",
+                            img: "/Properties/Famous_Places/LocalMarket.webp",
                         },
                     ].map((place, i) => (
                         <div
