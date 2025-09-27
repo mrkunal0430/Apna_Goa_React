@@ -30,12 +30,45 @@ const Property = () => {
             </Helmet>
 
 
-            <div className="relative h-[40vh] md:h-screen overflow-y-auto">
-                <div
-                    className=" absolute inset-0 bg-[url('/Property_Hero.webp')] bg-cover bg-center bg-fixed"
-                ></div>
-                <div className="absolute inset-0 bg-black/40"></div>
+            <div className="relative h-[70vh] md:h-screen flex items-center justify-center">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <img
+                        src="/Property_Hero.webp"
+                        alt="ApnaGoa Properties"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10 text-center px-6 max-w-4xl">
+                    <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                        Discover Your Perfect Stay in South Goa
+                    </h1>
+                    <p className="text-lg md:text-xl text-gray-200 mb-8">
+                        Choose from our handpicked <span className="font-semibold">Villas</span> or
+                        <span className="font-semibold"> Apartments</span> for a memorable holiday.
+                    </p>
+
+                    {/* CTA Buttons */}
+                    <div className="flex flex-col md:flex-row gap-6 justify-center">
+                        <a
+                            href="/villa"
+                            className="bg-white/90 hover:bg-white text-black font-semibold px-8 py-4 rounded-2xl shadow-lg transition-all"
+                        >
+                            Explore Villas
+                        </a>
+                        <a
+                            href="/apartment"
+                            className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg transition-all"
+                        >
+                            Explore Apartments
+                        </a>
+                    </div>
+                </div>
             </div>
+
 
             <section className=" overflow-hidden bg-[#739EC9] relative" data-aos="fade-up">
                 <motion.div
@@ -77,72 +110,7 @@ const Property = () => {
             </div>
 
             {/* ------------------ Property Cards ------------------ */}
-            <section className="py-6 px-6 md:px-16 lg:px-24 bg-[#739EC9]">
-                <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
-                    {/* Apartments */}
-                    <motion.div
-                        whileHover={{ scale: 1.02 }}
-                        transition={{ duration: 0.3 }}
-                        className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200"
-                        data-aos="fade-up"
-                    >
-                        <div className="relative">
-                            <img
-                                src="Properties/Apartment/14.webp"
-                                alt="Apartments in Goa"
-                                className="w-full h-72 object-cover"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                            <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-white">
-                                Stylish Apartments
-                            </h3>
-                        </div>
-                        <div className="p-6">
-                            <p className="text-gray-600 mb-6 leading-relaxed">
-                                Modern and fully furnished, our apartments are perfect for small groups or families. With private kitchens, cozy living rooms, and balconies overlooking South Goa’s landscapes, they bring comfort and convenience together.
-                            </p>
-                            <Link
-                                to="/properties/apartment"
-                                className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl shadow hover:bg-indigo-700 transition font-medium"
-                            >
-                                Explore Apartments
-                            </Link>
-                        </div>
-                    </motion.div>
 
-                    {/* Villas */}
-                    <motion.div
-                        whileHover={{ scale: 1.02 }}
-                        transition={{ duration: 0.3 }}
-                        className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                    >
-                        <div className="relative">
-                            <img
-                                src="/Villa.webp"
-                                alt="Villas in Goa"
-                                className="w-full h-72 object-cover"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                            <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-white">
-                                Luxury Villas
-                            </h3>
-                        </div>
-                        <div className="p-6">
-                            <p className="text-gray-600 mb-6 leading-relaxed">
-                                Perfect for larger groups, our villas offer private pools, lush gardens, and luxurious interiors. Whether it’s a family reunion or a special celebration, our villas create memories that last a lifetime.
-                            </p>
-                            <Link
-                                to="/properties/villa"
-                                className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl shadow hover:bg-indigo-700 transition font-medium"
-                            >
-                                Explore Villas
-                            </Link>
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
 
             <section className="py-12 px-6 md:px-16 lg:px-24 bg-[#739EC9]">
                 <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">

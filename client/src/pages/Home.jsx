@@ -24,19 +24,19 @@ const categories = [
     {
         title: "Cozy Apartments",
         desc: "Perfect stays for couples & small families in South Goa.",
-        img: "/2BHK_Apartment/14.webp",
+        img: "/Properties/Apartment/14.webp",
         link: "properties/apartment",
     },
     {
-        title: "Experiences",
+        title: "Explore",
         desc: "Curated Goa experiences: beaches, culture & nightlife.",
-        img: "/experience.jpg",
-        link: "/experiences",
+        img: "/Explore.webp",
+        link: "/explore",
     },
     {
         title: "Food & Drinks",
         desc: "Enjoy authentic Goan cuisine & beachside cafes.",
-        img: "/food.jpg",
+        img: "/food.webp",
         link: "/food",
     },
 ];

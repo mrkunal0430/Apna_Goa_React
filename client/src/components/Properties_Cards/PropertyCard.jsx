@@ -8,7 +8,7 @@ const PropertyCard = ({ image, title, description, link }) => {
 
     return (
         <div
-            className="relative w-full h-80 md:h-96 overflow-hidden rounded-2xl shadow-lg group cursor-pointer"
+            className="relative w-full h-96 md:h-2xl lg:h-2xl overflow-hidden rounded-2xl shadow-lg group cursor-pointer"
             onClick={() => setOpen(!open)} // tap to open on mobile
 
         >

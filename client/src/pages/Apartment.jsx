@@ -20,6 +20,7 @@ import {
     CheckCircle,
     ChevronDown,
 } from "lucide-react";
+import ApartmentImages from "../Data/Home/villa_Apartment.json";
 
 
 const videoCards = [
@@ -115,18 +116,7 @@ const Apartment = () => {
                         modules={[Navigation]}
                         className="h-[500px] md:h-[650px] rounded-3xl shadow-lg bg-[#032446]"
                     >
-                        {[
-                            "/Properties/Apartment/1.webp",
-                            "/Properties/Apartment/2.webp",
-                            "/Properties/Apartment/3.webp",
-                            "/Properties/Apartment/4.webp",
-                            "/Properties/Apartment/5.webp",
-                            "/Properties/Apartment/6.webp",
-                            "/Properties/Apartment/7.webp",
-                            "/Properties/Apartment/8.webp",
-                            "/Properties/Apartment/9.webp",
-                            "/Properties/Apartment/10.webp",
-                        ].map((img, i) => (
+                        {ApartmentImages.find((property) => property.id === 2).images.map((img, i) => (
                             <SwiperSlide key={i}>
                                 <img
                                     src={img}
