@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import ForecastCard from './ForecastCard';
 
 const API_URL =
-    'http://api.weatherapi.com/v1/forecast.json?key=bab5a6ca4b82401ebc060500251909&q=Goa&days=7&aqi=no&alerts=no';
+    'https://api.weatherapi.com/v1/forecast.json?key=bab5a6ca4b82401ebc060500251909&q=Goa&days=7&aqi=no&alerts=no';
 
 const Footer = () => {
     const [weather, setWeather] = useState(null);
