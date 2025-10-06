@@ -121,7 +121,7 @@ const About = () => {
 
                         {/* Floating Host Card */}
                         <div className="absolute -bottom-6 -left-6 bg-white text-gray-800 p-4 rounded-2xl shadow-lg w-64 flex items-center gap-4">
-                            <div className='absolute -left-2  transform -translate-x-1/2'>
+                            <div className='absolute top-10 -right-40   transform -translate-x-1/2'>
                                 <img
                                     src="poonam.jpg"
                                     alt="Owner Host"
@@ -129,7 +129,7 @@ const About = () => {
                                 />
                             </div>
 
-                            <div className='pl-12'>
+                            <div className=''>
                                 <h3 className="font-bold text-lg">Meet Poonam</h3>
                                 <p className="text-sm text-gray-600">
                                     Owner & Host of ApnaGoa Homestays. Passionate about hospitality
@@ -141,8 +141,7 @@ const About = () => {
                 </div>
             </section>
 
-            <section className="relative py-16 px-6 lg:px-20  bg-gradient-to-tr from-orange-200 via-rose-200 to-yellow-200
-">
+            <section className="relative py-16 px-6 lg:px-20  bg-white">
 
                 <div className="max-w-6xl mx-auto text-center">
                     <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-12">
@@ -185,7 +184,7 @@ const About = () => {
                     {/* Hero Section */}
                     <div className="flex flex-col md:flex-row items-center gap-10 mb-14" data-aos="fade-up">
                         <img
-                            src="/Villa/bg.jpg"
+                            src="/Properties/Villa/13.webp"
                             alt="ApnaGoa Property"
                             className="w-full md:w-1/2 rounded-xl shadow-xl object-cover"
                             loading='lazy'
@@ -242,11 +241,11 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="travel-map py-6 px-12 bg-[#bbd7f3]">
+            <div className="travel-map py-6 px-12 bg-white">
                 <h3 className="text-2xl font-bold text-center mb-4 text-gray-800">
                     South Goa at a Glance
                 </h3>
-                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200  m-10">
                     <iframe
                         title="South Goa Map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122895.85640111915!2d74.03861326953124!3d15.208129500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb8337f679a7d%3A0x863e2fe3fc3bf21a!2sSouth%20Goa%2C%20Goa!5e0!3m2!1sen!2sin!4v1657376548211!5m2!1sen!2sin"

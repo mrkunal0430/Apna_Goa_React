@@ -41,13 +41,7 @@ const categories = [
     },
 ];
 
-const images = [
-    { src: '/Villa/bg.webp', alt: 'Luxury Villa near Varca Beach' },
-    { src: '/Villa/15.webp', alt: 'Cozy Apartment near Colva' },
-    { src: '/2BHK_Apartment/14.webp', alt: 'Peaceful Evening in South Goa' },
-    { src: '/Villa/19.webp', alt: 'Palm Tree View in South Goa' },
-    { src: '/Villa/15.webp', alt: 'Sunset View near the Beach' },
-];
+
 
 const Home = () => {
     useEffect(() => {
@@ -74,11 +68,9 @@ const Home = () => {
             </Helmet>
 
             {/* Hero Slider Section */}
-            <div className="relative w-full h-[calc(100vh-64px)] overflow-hidden">
+            <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)] overflow-hidden">
                 {/* Background Parallax Image */}
-                <div
-                    className="absolute inset-0 bg-[url('/Villa.webp')] bg-cover bg-center bg-fixed"
-                ></div>
+                <img src="/Villa.webp" alt="Villa" className="absolute inset-0 w-full h-full object-cover" />
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/40"></div>
@@ -141,18 +133,11 @@ const Home = () => {
             </div>
 
 
-            {/* Testimonial Section */}
-            <div className="py-5 bg-[#bbd7f3]">
-                <h2
-                    className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8"
-                    data-aos="fade-up"
-                >
-                    Listen to what our guests have to say
-                </h2>
-                <TestimonialCard />
-            </div>
 
-            <div className="py-10 px-4 sm:px-6 lg:px-8 bg-[#bbd7f3] flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-start max-w-full ">      {/* Rating Card */}
+            <TestimonialCard />
+
+
+            <div className="py-10 px-4 sm:px-6 lg:px-8 bg-white flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-start max-w-full ">      {/* Rating Card */}
                 <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/3 xl:w-1/4 border rounded-3xl bg-gradient-to-br from-amber-200 via-blue-200 to-cyan-200 flex flex-col justify-center items-center text-center p-6 sm:p-8 space-y-4 shadow-lg">
                     {/* Stars */}
                     <div className="flex justify-center space-x-1 text-green-500">
@@ -204,11 +189,11 @@ const Home = () => {
                 </div>
             </section>
 
-            <div className="travel-map p-6 bg-[#bbd7f3]">
+            <div className="travel-map p-6 bg-white">
                 <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">
                     South Goa at a Glance
                 </h3>
-                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 m-10">
                     <iframe
                         title="South Goa Map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122895.85640111915!2d74.03861326953124!3d15.208129500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb8337f679a7d%3A0x863e2fe3fc3bf21a!2sSouth%20Goa%2C%20Goa!5e0!3m2!1sen!2sin!4v1657376548211!5m2!1sen!2sin"
@@ -225,7 +210,7 @@ const Home = () => {
 
                         Our place is well connected via all modes including taxis and public transport, Fatrade Four Point , Near St. RoqueChapel on Ramada Caravella road is the landmark to reach our place
 
-                        Our place is well connected via all modes including taxis and public transport, Fatrade Four Point , Near St. RoqueChapel on Ramada Caravella road is the landmark to reach our place</p>
+                        Our place is well connected via all modes including taxis and public transport, Fatrade Four Point , Near St. RoqueChapel on Ramada Caravella road is the landmark to reach our place</p>
                 </div>
             </div>
         </div>

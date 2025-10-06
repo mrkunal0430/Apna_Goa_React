@@ -56,6 +56,7 @@ const Explore = () => {
                         <SwiperSlider slidesData={PopularDestination} type="explore" ></SwiperSlider>
                     </div>
                 </div>
+                <div className="mx-6 md:mx-20 bg-[#032446] w-auto h-0.5"></div>
                 <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Local Events & Festivals</h3>
                     <p className="py-4" >Experience the vibrant culture of Goa through its colorful festivals and
@@ -64,6 +65,7 @@ const Explore = () => {
                         <SwiperSlider slidesData={Local_Event} type="explore" ></SwiperSlider>
                     </div>
                 </div>
+                <div className="mx-6 my-10 md:mx-20 bg-[#032446] w-auto h-1"></div>
                 <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Adventure & Activities</h3>
                     <p className="py-4" >Discover thrilling experiences and water sports that will make your South Goa
@@ -72,7 +74,7 @@ const Explore = () => {
                         <SwiperSlider slidesData={Adventure_Activity} type="explore" ></SwiperSlider>
                     </div>
                 </div>
-
+                <div className="mx-6 my-10 md:mx-20 bg-[#032446] w-auto h-1"></div>
 
                 <div data-aos="fade-up">
                     <h3 className="text-2xl font-bold" >Cultural Experiences</h3>
@@ -82,7 +84,7 @@ const Explore = () => {
                         <SwiperSlider slidesData={Cultural_Experience} type="explore" ></SwiperSlider>
                     </div>
                 </div>
-
+                <div className="mx-6 my-10 md:mx-20 bg-[#032446] w-auto h-1"></div>
                 <div>
                     <h1 className="text-2xl font-bold">Travel Tips & Recommendations</h1>
                     <p className="pt-3">Make the most of your South Goa experience with these practical tips and insider recommendations.</p>
@@ -90,7 +92,7 @@ const Explore = () => {
                         <TravelTips_Recommendation></TravelTips_Recommendation>
                     </div>
                 </div>
-
+                <div className="mx-6 my-10 md:mx-20 bg-[#032446] w-auto h-1"></div>
                 <div>
                     <h1 className="text-2xl font-bold">Suggested 3-Day Itinerary</h1>
                     <div>
@@ -99,7 +101,7 @@ const Explore = () => {
                 </div>
 
             </div>
-
+            <div className="mx-6 my-10 md:mx-20 bg-[#032446] w-auto h-1"></div>
             <div className="travel-map p-6 bg-gradient-to-tr from-yellow-100 via-rose-100 to-orange-100">
                 <h3 className="text-2xl font-bold text-center mb-4 text-gray-800">
                     South Goa at a Glance

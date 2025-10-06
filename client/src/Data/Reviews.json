@@ -1,30 +1,35 @@
 [
     {
         "name": "Veshant Dahiya",
+        "image": "https://intheknow.insead.edu/sites/intheknow/files/2019-03/jayanth_mantri_testimonial.jpeg",
         "initials": "VD",
         "position": "Villa guest",
         "text": "Peaceful retreat! Friendly hosts, clean rooms, and a beautiful location. Felt like home."
     },
     {
         "name": "Sonali Bhardwaj",
+        "image": "https://intheknow.insead.edu/sites/intheknow/files/2019-03/jayanth_mantri_testimonial.jpeg",
         "initials": "SB",
         "position": "Villa guest",
         "text": "Wonderful stay! Cozy room, great hospitality, and delicious homemade food. Highly recommend! "
     },
     {
         "name": "Harsh",
+        "image": "https://intheknow.insead.edu/sites/intheknow/files/2019-03/jayanth_mantri_testimonial.jpeg",
         "initials": "H",
         "position": "Apartment guest",
         "text": "Lovely room, friendly hosts, and great breakfast. Quiet location but close to everything. Highly recommend!"
     },
     {
         "name": "Rahul Khanna",
+        "image": "https://intheknow.insead.edu/sites/intheknow/files/2019-03/jayanth_mantri_testimonial.jpeg",
         "initials": "RK",
         "position": "Cottage guest",
         "text": "The place is perfect for a getaway. Peaceful atmosphere and great service."
     },
     {
         "name": "Mansi Sharma",
+        "image": "https://intheknow.insead.edu/sites/intheknow/files/2019-03/jayanth_mantri_testimonial.jpeg",
         "initials": "MS",
         "position": "Hotel guest",
         "text": "Super clean rooms and fantastic hosts. Would love to visit again."
