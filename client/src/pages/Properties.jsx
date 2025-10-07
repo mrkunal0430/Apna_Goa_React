@@ -53,18 +53,18 @@ const Property = () => {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col md:flex-row gap-6 justify-center">
-                        <a
-                            href="/villa"
+                        <Link
+                            to="/properties/villa"
                             className="bg-white/90 hover:bg-white text-black font-semibold px-8 py-4 rounded-2xl shadow-lg transition-all"
                         >
                             Explore Villas
-                        </a>
-                        <a
-                            href="/apartment"
+                        </Link>
+                        <Link
+                            to="/properties/apartment"
                             className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg transition-all"
                         >
                             Explore Apartments
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

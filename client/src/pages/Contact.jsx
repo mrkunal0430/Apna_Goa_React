@@ -4,21 +4,29 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        company: "",
-        message: "",
-    });
+    const [result, setResult] = React.useState("");
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(formData);
-        alert("Form submitted!");
+        formData.append("access_key", "413dce1e-50ad-4c08-8cda-74215129da3a");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
     };
 
     return (
@@ -95,8 +103,6 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
                                     placeholder="Sher Singh"
                                     className="w-full p-3 rounded-md bg-gray-800 text-white focus:ring-2 focus:ring-blue-500"
                                 />
@@ -107,8 +113,6 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
                                     placeholder="apnagoa@gmail.com"
                                     className="w-full p-3 rounded-md bg-gray-800 text-white focus:ring-2 focus:ring-blue-500"
                                 />
@@ -119,8 +123,6 @@ const Contact = () => {
                                 <input
                                     type="number"
                                     name="mobileNo"
-                                    value={formData.mobileNo}
-                                    onChange={handleChange}
                                     placeholder="1234567890"
                                     className="w-full p-3 rounded-md bg-gray-800 text-white focus:ring-2 focus:ring-blue-500"
                                 />
@@ -130,8 +132,6 @@ const Contact = () => {
                                 <label className="block mb-1 text-gray-400">Message</label>
                                 <textarea
                                     name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
                                     placeholder="Type your message here"
                                     rows="4"
                                     className="w-full p-3 rounded-md bg-gray-800 text-white focus:ring-2 focus:ring-blue-500"
@@ -145,6 +145,7 @@ const Contact = () => {
                                 Submit
                             </button>
                         </form>
+                        <span>{result}</span>
                     </div>
                 </div>
             </div>

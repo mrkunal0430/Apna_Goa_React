@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import Properties from './pages/Properties';
 import Villa from './pages/Villa';
 import Apartment from './pages/Apartment';
+import FoodDrinks from './pages/FoodDrinks';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/properties" element={<Properties />} />
         <Route path="/properties/villa" element={<Villa />} />
         <Route path="/properties/apartment" element={<Apartment />} />
+        <Route path="/fooddrinks" element={<FoodDrinks />} />
       </Routes>
       <Footer />
     </>

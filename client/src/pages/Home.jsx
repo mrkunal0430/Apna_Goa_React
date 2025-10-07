@@ -1,7 +1,8 @@
 // src/pages/Home.jsx
 import React, { useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+import { Link } from "react-router-dom";
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import TestimonialCard from '../components/Home/TestimonialCard';
 import PropertyShowcase from '../components/Home/Gallery/PropertyShowcase'
 import { FaStar } from "react-icons/fa";
@@ -18,7 +19,7 @@ const categories = [
     {
         title: "Luxury Villas",
         desc: "Spacious private villas with pools & modern amenities.",
-        img: "/Villa.webp",
+        img: "/Home/Villa.webp",
         link: "properties/villa",
     },
     {
@@ -36,8 +37,8 @@ const categories = [
     {
         title: "Food & Drinks",
         desc: "Enjoy authentic Goan cuisine & beachside cafes.",
-        img: "/food.webp",
-        link: "/food",
+        img: "/Home/food.webp",
+        link: "/fooddrinks",
     },
 ];
 
@@ -70,7 +71,7 @@ const Home = () => {
             {/* Hero Slider Section */}
             <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)] overflow-hidden">
                 {/* Background Parallax Image */}
-                <img src="/Villa.webp" alt="Villa" className="absolute inset-0 w-full h-full object-cover" />
+                <img src="/Home/Villa.webp" alt="Villa" className="absolute inset-0 w-full h-full object-cover" />
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/40"></div>
@@ -84,12 +85,12 @@ const Home = () => {
                         Handpicked Villas & Apartments for your perfect holiday escape
                     </p>
                     <div className="mt-6 flex gap-4">
-                        <button className="px-6 py-3 bg-emerald-500 text-white font-semibold rounded-full shadow hover:bg-emerald-600 transition">
+                        <Link to="/explore" className="px-6 py-3 bg-emerald-500 text-white font-semibold rounded-full shadow hover:bg-emerald-600 transition">
                             Explore Stays
-                        </button>
-                        <button className="px-6 py-3 border border-white text-white font-semibold rounded-full hover:bg-white/10 transition">
+                        </Link>
+                        <Link to="/contact" className="px-6 py-3 border border-white text-white font-semibold rounded-full hover:bg-white/10 transition">
                             Contact Us
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -193,7 +194,7 @@ const Home = () => {
                 <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">
                     South Goa at a Glance
                 </h3>
-                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 m-10">
+                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 lg:m-10">
                     <iframe
                         title="South Goa Map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122895.85640111915!2d74.03861326953124!3d15.208129500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb8337f679a7d%3A0x863e2fe3fc3bf21a!2sSouth%20Goa%2C%20Goa!5e0!3m2!1sen!2sin!4v1657376548211!5m2!1sen!2sin"

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { FaHome, FaSmile, FaWhatsapp, FaMapMarkedAlt, FaUserFriends, FaCrown } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -89,20 +90,20 @@ const About = () => {
 
                         {/* CTA */}
                         <div className="mt-8 flex gap-4">
-                            <a
-                                href="#properties"
+                            <Link
+                                to="/properties"
                                 className="bg-yellow-400 text-black px-6 py-3 rounded-2xl font-semibold shadow-lg hover:bg-yellow-300 transition"
                             >
                                 Explore Properties
-                            </a>
-                            <a
-                                href="https://wa.me/91XXXXXXXXXX"
+                            </Link>
+                            <Link
+                                to="https://wa.me/917011915055?text=Hi!%20I%20want%20to%20know%20more%20about%20ApnaGoa%20food%20and%20dining%20options"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-2 border-2 border-yellow-400 px-6 py-3 rounded-2xl font-semibold hover:bg-yellow-400 hover:text-black transition"
                             >
                                 <FaWhatsapp className="text-xl" /> Chat with Owner
-                            </a>
+                            </Link>
                         </div>
                     </motion.div>
 
@@ -245,7 +246,7 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-center mb-4 text-gray-800">
                     South Goa at a Glance
                 </h3>
-                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200  m-10">
+                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200  lg:m-10">
                     <iframe
                         title="South Goa Map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122895.85640111915!2d74.03861326953124!3d15.208129500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb8337f679a7d%3A0x863e2fe3fc3bf21a!2sSouth%20Goa%2C%20Goa!5e0!3m2!1sen!2sin!4v1657376548211!5m2!1sen!2sin"
