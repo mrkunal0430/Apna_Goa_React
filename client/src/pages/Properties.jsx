@@ -122,7 +122,7 @@ const Property = () => {
                     />
 
                     <PropertyCard
-                        image="/Villa.webp"
+                        image="/Home/Villa.webp"
                         title="Luxury Villas"
                         description="Perfect for larger groups, our villas offer private pools, lush gardens, and luxurious interiors. Whether it’s a family reunion or a special celebration, our villas create memories that last a lifetime."
                         link="/properties/villa"

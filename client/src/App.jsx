@@ -13,6 +13,8 @@ import Villa from './pages/Villa';
 import Apartment from './pages/Apartment';
 import FoodDrinks from './pages/FoodDrinks';
 
+import NotFound from './pages/NotFound';
+
 function App() {
   return (
     <>
@@ -28,6 +30,8 @@ function App() {
         <Route path="/properties/villa" element={<Villa />} />
         <Route path="/properties/apartment" element={<Apartment />} />
         <Route path="/fooddrinks" element={<FoodDrinks />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

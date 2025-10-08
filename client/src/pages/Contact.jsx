@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from '@vuer-ai/react-helmet-async';
-import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
-
 const Contact = () => {
-    const [result, setResult] = React.useState("");
+    const [result, setResult] = useState("");
 
     const handleSubmit = async (event) => {
         event.preventDefault();
